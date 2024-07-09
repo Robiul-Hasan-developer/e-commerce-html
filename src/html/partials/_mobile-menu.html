@@ -1,0 +1,21 @@
+<!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu scroll-sm d-lg-none d-block">
+    <button type="button" class="close-button"> <i class="las la-times"></i> </button>
+    <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="assets/images/logo/logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            @@include('../partials/_nav-menu.html', {
+                "class" : "nav-menu--mobile"
+            })
+            <a href="login.html" class="btn btn-outline-main d-lg-none d-block mt-4">
+                Login
+                <span class="icon-right icon"> 
+                    <i class="las la-user"></i>
+                </span> 
+            </a>
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->

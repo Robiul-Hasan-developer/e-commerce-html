@@ -1,0 +1,175 @@
+/* ============= Header Start Here ======================= */
+.header {
+    transition: .2s linear;
+    @include md-screen {
+        padding: 10px 0;
+    }
+    &.fixed-header {
+        position: sticky;
+        inset-inline-start: 0;
+        inset-block-start: 0;
+        inset-inline-end: 0;
+        width: 100%;
+        z-index: 9;
+        backdrop-filter: blur(24px);
+        animation: slideDown 0.35s ease-out;    
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+        @include md-screen {
+            inset-block-start: -1px;
+        }
+    }
+}
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+.logo {
+    img {
+        max-width: 200px;
+    }
+}
+
+.toggle-mobileMenu {
+    line-height: 1;
+    font-size: 36px;
+    color: hsl(var(--heading-color));
+}
+
+/* Header Menu and Submenu Css Start */
+.nav-menu {
+    gap: 24px;
+    &__item {
+        &.activePage {
+            > a {
+                color: hsl(var(--main));
+                &::before {
+                    color: hsl(var(--main));
+                }
+            }
+        }
+        &:hover {
+            > a {
+                color: hsl(var(--heading-color));
+                @media (min-width: 992px) {
+                    color: hsl(var(--main));
+                }
+            }
+        }
+    }
+    &__link {
+        color: hsl(var(--heading-color));
+        font-weight: 500;
+        width: 100%;
+        padding: 38px 0;
+        width: 100%;
+    }   
+}
+
+.has-submenu {
+    position: relative;
+    .nav-menu {
+        &__link {
+            padding-inline-end: 16px;
+        }
+    }
+
+    &.active {
+        > a, > a::before{
+            color: hsl(var(--main));
+        }
+        > a::before {
+            transform: translateY(-50%) rotate(180deg) !important; 
+        }
+    }
+    &:hover {
+        .nav-submenu {
+            visibility: visible;
+            opacity: 1;
+            margin-block-start: 0;
+        }
+        > a {
+            &::before {
+                @media (min-width: 992px) {
+                    color: hsl(var(--main));
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+        }
+    }
+    > a {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "\f107";
+            inset-inline-end: 0;
+            inset-block-start: 50%;
+            transform: translateY(-50%);
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: hsl(var(--heading-color)/.4);
+            transition: .2s linear;
+        }
+    }
+}
+
+/* Submenu Start */
+.nav-submenu {
+    position: absolute;
+    inset-inline-start: 0;
+    @extend .box-shadow-lg; 
+    inset-block-start: 100%;
+    width: max-content;
+    background-color: hsl(var(--white));
+    border-radius: 6px;
+    min-width: 190px;
+    overflow: hidden;
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+    margin-block-start: 16px;
+    transition: .2s linear;
+    z-index: 99;
+    @media (min-width: 992px) {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+    &__item {
+        display: block;
+        border-radius: 4px;
+        transition: .2s linear;
+        position: relative;
+        &.activePage {
+            .nav-submenu {
+                &__link {
+                    color: hsl(var(--main));
+                }
+            }
+        }
+        &:hover {
+            a {
+                color: hsl(var(--heading-color));
+            }
+        }
+    }
+    &__link {
+        color: hsl(var(--heading-color));
+        font-weight: 500;
+        width: 100%;
+        padding-inline-end: 16px;
+        width: 100%;
+        display: block;
+        padding: 8px 14px;
+        border-radius: inherit;
+        &::before {
+            position: absolute;
+        }
+    }
+}
+/* Submenu End */
+/* Header Menu and Submenu Css End */
+/* ================================= Header Css End =========================== */

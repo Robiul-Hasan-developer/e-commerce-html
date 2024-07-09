@@ -1,0 +1,98 @@
+/* ================= Slick Arrow & Dots css Start ================ */ 
+.slick-initialized.slick-slider {
+  .slick-track {
+      display: flex;
+  }
+  .slick-slide {
+    cursor: grab;
+      height: auto;
+      margin: 0 10px;
+      > div {
+          height: 100%;
+      }
+  }
+}
+
+/* Slick Slider Arrow */
+.slick-arrow {
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: .2s linear;
+  inset-block-end: clampCal(24, 60);
+  inset-inline-start: clampCal(24, 60);
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  margin-block-start: 0;
+  background-color: hsl(var(--white));
+  color: hsl(var(--heading-color));
+  box-shadow: 0px 20px 30px 0px rgba(197, 196, 201, 0.25);
+  inset-inline-start: -24px;
+}
+.slick-arrow {
+  &:hover {
+    background-color: hsl(var(--main));
+    color: hsl(var(--white));
+  }
+}
+.slick-next {
+  inset-inline-end: -24px;
+  inset-inline-start: auto;
+}
+
+
+/* Arrow Style Two */
+.arrow-style-two {
+  position: relative;
+  .slick-arrow {
+    inset-inline-start: auto;
+    inset-block-start: auto;
+    inset-inline-end: 0;
+    inset-block-end: calc(100% + 50px);
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    transform: unset;
+  }
+  .slick-prev {
+    inset-inline-end: 60px;
+  }
+  .slick-next {
+    transform: translateX(0px);
+  }
+}
+
+/* Dots Css Start */ 
+.slick-dots {
+    text-align: center;
+    padding-block-start: 20px;
+    li {
+        display: inline-block;
+        button {
+            border: none;
+            background-color: hsl(var(--black)/.2);
+            color: hsl(var(--white));;
+            margin: 0 3px;
+            width: 8px;
+            height: 8px;
+            border-radius: 1px;
+            border-radius: 50%;
+            text-indent: -9999px;
+            transition: .3s linear;
+        }
+        &.slick-active button {
+            background-color: hsl(var(--main));
+            width: 25px;
+            border-radius: 5px;
+        }
+    }
+}
+/* Dots Css End */
+/* ================= Slick Arrow & Dots css Start ================ */ 

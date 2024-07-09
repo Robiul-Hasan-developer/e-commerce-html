@@ -1,0 +1,28 @@
+/* ================================= Tab Css Start =========================== */
+.common-tab {
+    margin-block-end: 20px;
+    gap: 16px;
+    .nav-item {
+        border-bottom: 0;
+        .nav-link {
+            color: hsl(var(--heading-color)); 
+            padding: 8px 16px !important;
+            background-color: transparent;
+            transition: .2s linear;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            font-weight: 500;
+            overflow: hidden;
+             
+            &.active {
+                color: hsl(var(--white)) !important; 
+                border-color: hsl(var(--main)) !important;
+            }
+            &:hover {
+                color: hsl(var(--main));
+            }
+        }
+    }
+}
+/* ================================= Tab Css End =========================== */

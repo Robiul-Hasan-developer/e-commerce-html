@@ -1,0 +1,43 @@
+/* =========================== header top Css Start =============================== */
+.border-right-item {
+    position: relative;
+    &:not(:last-child) {
+        margin-inline-end: 24px;
+        padding-inline-end: 24px;
+        @include xl-screen {
+            margin-inline-end: 16px !important;
+            padding-inline-end: 16px !important;
+        }
+        @include lg-screen {
+            margin-inline-end: 10px !important;
+            padding-inline-end: 10px !important;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            inset-block-start: 50%;
+            transform: translateY(-50%);
+            inset-inline-end: 0;
+            width: 1px;
+            height: 15px;
+            background-color: hsl(var(--white)/.3);
+        }
+    }
+    &-sm-space {
+        &:not(:last-child) {
+            margin-inline-end: 20px;
+            padding-inline-end: 20px;
+        }
+    }
+}
+/* Has Dropdown Css */
+.arrow-white {
+    > a {
+        padding-inline-end: 12px;
+        &::before {
+            color: hsl(var(--white)) !important; 
+            font-size: 8px;
+        }
+    }
+}
+/* =========================== header top Css End =============================== */

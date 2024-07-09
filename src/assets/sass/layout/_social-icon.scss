@@ -1,0 +1,23 @@
+
+/* ================================= Social Icon Css Start =========================== */
+.social-list {
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+    &__link {
+        width: 36px;
+        height: 36px;
+        border: 1px solid hsl(var(--white)/.2);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: hsl(var(--white));
+        &:hover {
+            background-color: hsl(var(--main));
+            border-color: hsl(var(--main));
+            color: hsl(var(--white));
+        }
+    }
+}
+/* ================================= Social Icon Css End ===========================  */
