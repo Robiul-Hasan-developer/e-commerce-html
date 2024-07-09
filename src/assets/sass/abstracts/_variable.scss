@@ -1,5 +1,5 @@
 /* Font Family*/
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Quicksand:wght@300..700&display=swap');
 
 $colors: (
   "main": (
@@ -141,6 +141,7 @@ $spaces: (
   "26": #{rem(26px)},
   "28": #{rem(28px)},
   "30": #{rem(30px)},
+  "32": #{rem(32px)},
   "36": #{rem(32px)},
   "40": #{rem(40px)}, 
   "44": #{rem(44px)}, 
@@ -176,17 +177,17 @@ $font-sizes: (
 :root {    
 
   /* Font Family Variable */
-  --heading-font: 'Vidaloka', serif;
-  --body-font: 'Jost', sans-serif;
-  --poppins-font: 'Poppins', sans-serif;
+  --heading-font: "Exo", sans-serif;
+  --heading-font-two: "Quicksand", sans-serif;
+  --body-font: "Inter", sans-serif;
   
   /* Font Size Variable Start */
-  --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem); // Min:32px - Max:68px
-  --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem); // Min: 28px - Max: 46px
-  --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem); // Min: 24px - Max: 40px
-  --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem); // Min: 20px - Max: 32px
-  --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem); // Min: 18px - Max: 28px
-  --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem); // Min: 16px - Max-20px
+  --heading-one: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem); // Min:36px - Max:72px
+  --heading-two: clamp(2rem, 0.7133rem + 2.8846vw, 3.5rem); // Min: 32px - Max: 56px
+  --heading-three: clamp(1.75rem, 0.3353rem + 2.1661vw, 3rem); // Min: 28px - Max: 48px
+  --heading-four: clamp(1.5rem, 0.5569rem + 1.444vw, 2.5rem); // Min: 24px - Max: 40px
+  --heading-five: clamp(1.25rem, 1.2rem + 0.722vw, 2.25rem); // Min: 20px - Max: 36px
+  --heading-six: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem); // Min: 18px - Max-24px
   /* Font Size End */
 
   /* template main color */
@@ -197,14 +198,17 @@ $font-sizes: (
 
    /* White Color */
   --white: 0 0% 100%;
-  --black: 0 0% 0%;
+  --black: 235 49% 14%;
   --light: 0 0% 51%;
   
   --heading-color: var(--black);
   --body-color: var(--light);
   --body-bg: var(--gray);
   --border-color: 236 13% 77%;
-  --section-bg: 210 25% 97%;
+
+  --bg-color-one: #F3FAF2; 
+  --bg-color-two: #FFFBF4; 
+  --bg-color-three: #F1F1F1; 
 
   --translate-x-middle: translateX(-50%); 
   --translate-y-middle: translateY(-50%); 

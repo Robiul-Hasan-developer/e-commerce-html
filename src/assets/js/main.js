@@ -102,6 +102,13 @@
   // ========================== add active class to ul>li top Active current page Js End =====================
 
   
+  // ========================== Select2 Js Start =================================
+  $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
+  // ========================== Select2 Js End =================================
+
+  
   // ========================= Testimonial Four Slider Js Start ==============
   // $('.testimonial-four-slider').slick({
   //   slidesToShow: 2,

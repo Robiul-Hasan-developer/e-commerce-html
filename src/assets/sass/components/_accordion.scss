@@ -56,9 +56,9 @@
         }
         &[aria-expanded="true"], &[aria-expanded="false"] {
             &::after {
-                font-family: "Font Awesome 5 Free";
+                font-family: "Phosphor";
                 font-weight: 900;
-                content: "\f106";
+                content: "\E136";
                 color: hsl(var(--main));
                 display: inline-block;
                 position: absolute;

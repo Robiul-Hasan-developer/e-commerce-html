@@ -37,12 +37,12 @@
 .toggle-mobileMenu {
     line-height: 1;
     font-size: 36px;
-    color: hsl(var(--heading-color));
+    color: var(--gray-400);
 }
 
 /* Header Menu and Submenu Css Start */
 .nav-menu {
-    gap: 24px;
+    gap: 32px;
     &__item {
         &.activePage {
             > a {
@@ -54,7 +54,7 @@
         }
         &:hover {
             > a {
-                color: hsl(var(--heading-color));
+                color: var(--gray-400);
                 @media (min-width: 992px) {
                     color: hsl(var(--main));
                 }
@@ -62,10 +62,10 @@
         }
     }
     &__link {
-        color: hsl(var(--heading-color));
+        color: var(--gray-400);
         font-weight: 500;
         width: 100%;
-        padding: 38px 0;
+        padding: 16px 0;
         width: 100%;
     }   
 }
@@ -105,11 +105,11 @@
         position: relative;
         &::before {
             position: absolute;
-            content: "\f107";
+            content: "\E136";
             inset-inline-end: 0;
             inset-block-start: 50%;
             transform: translateY(-50%);
-            font-family: 'Font Awesome 5 Free';
+            font-family: 'Phosphor';
             font-weight: 900;
             color: hsl(var(--heading-color)/.4);
             transition: .2s linear;
@@ -138,6 +138,10 @@
         max-height: 400px;
         overflow-y: auto;
     }
+    &--sm {
+        width: 132px;
+        min-width: unset;
+    }
     &__item {
         display: block;
         border-radius: 4px;
@@ -146,25 +150,22 @@
         &.activePage {
             .nav-submenu {
                 &__link {
-                    color: hsl(var(--main));
+                    color: hsl(var(--main)) !important;
                 }
-            }
-        }
-        &:hover {
-            a {
-                color: hsl(var(--heading-color));
             }
         }
     }
     &__link {
-        color: hsl(var(--heading-color));
+        color: var(--gray-400);
         font-weight: 500;
         width: 100%;
         padding-inline-end: 16px;
         width: 100%;
-        display: block;
         padding: 8px 14px;
         border-radius: inherit;
+        &:hover {
+            color: var(--gray-600) !important;
+        }
         &::before {
             position: absolute;
         }

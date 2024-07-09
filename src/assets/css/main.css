@@ -39,20 +39,20 @@
 /* ======================== Functions Css End ======================= */
 /* ======================== Functions Css End ======================= */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
-    --heading-font: "Vidaloka", serif;
-    --body-font: "Jost", sans-serif;
-    --poppins-font: "Poppins", sans-serif;
+    --heading-font: "Exo", sans-serif;
+    --heading-font-two: "Quicksand", sans-serif;
+    --body-font: "Inter", sans-serif;
   /* Font Size Variable Start */
-    --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem);
-    --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem);
-    --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem);
-    --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem);
-    --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem);
-    --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
+    --heading-one: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
+    --heading-two: clamp(2rem, 0.7133rem + 2.8846vw, 3.5rem);
+    --heading-three: clamp(1.75rem, 0.3353rem + 2.1661vw, 3rem);
+    --heading-four: clamp(1.5rem, 0.5569rem + 1.444vw, 2.5rem);
+    --heading-five: clamp(1.25rem, 1.2rem + 0.722vw, 2.25rem);
+    --heading-six: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
   /* Font Size End */
   /* template main color */
     --main-h: 148;
@@ -61,13 +61,15 @@
     --main: var(--main-h) var(--main-s) var(--main-l);
   /* White Color */
     --white: 0 0% 100%;
-    --black: 0 0% 0%;
+    --black: 235 49% 14%;
     --light: 0 0% 51%;
     --heading-color: var(--black);
     --body-color: var(--light);
     --body-bg: var(--gray);
     --border-color: 236 13% 77%;
-    --section-bg: 210 25% 97%;
+    --bg-color-one: #F3FAF2;
+    --bg-color-two: #FFFBF4;
+    --bg-color-three: #F1F1F1;
     --translate-x-middle: translateX(-50%);
     --translate-y-middle: translateY(-50%);
     --size-2: 0.125rem;
@@ -91,6 +93,7 @@
     --size-26: 1.625rem;
     --size-28: 1.75rem;
     --size-30: 1.875rem;
+    --size-32: 2rem;
     --size-36: 2rem;
     --size-40: 2.5rem;
     --size-44: 2.75rem;
@@ -282,9 +285,9 @@
 }
 
 .common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Phosphor";
     font-weight: 900;
-    content: "\f106";
+    content: "\e136";
     color: hsl(var(--main));
     display: inline-block;
     position: absolute;
@@ -382,7 +385,7 @@
     width: 100%;
     padding: 17px 24px;
     background-color: transparent !important;
-    border: 1px solid var(--neutral-300);
+    border: 1px solid var(--gray-200);
     color: hsl(var(--black));
     line-height: 1;
 }
@@ -400,9 +403,9 @@
 }
 
 .common-input::placeholder {
-    color: var(--neutral-600);
-    color: hsl(var(--light));
-    transition: 0.25s linear;
+    color: var(--gray-500);
+    transition: 0.2s linear;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 
@@ -515,7 +518,7 @@ textarea + .input-icon {
     inset-inline-end: 20px;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    font-family: "Font Awesome 5 Free";
+    font-family: "Phosphor";
     font-weight: 900;
     color: hsl(var(--main));
     transition: 0.2s linear;
@@ -674,7 +677,7 @@ input[type=number] {
 .common-check .form-check-input::before {
     position: absolute;
     content: "\f00c";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Phosphor";
     font-weight: 900;
     color: hsl(var(--white));
     font-size: 12px;
@@ -947,6 +950,182 @@ input[type=number] {
 }
 
 /* ================= Common Card Css End ========================= */
+/* ======================= Select 2 Css Start =========================== */
+.select2-container--default .select2-selection--single {
+    border: 0;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border: 0;
+    position: relative;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b::before {
+    position: relative;
+    content: "\e136";
+    font-family: "Phosphor";
+    font-weight: 900;
+    color: hsl(var(--heading-color)/0.4);
+    transition: 0.2s linear;
+}
+
+.select2-container--open.select2-container--default .select2-selection--single .select2-selection__arrow b::before {
+    content: "\e13c" !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: 0 !important;
+    margin: 0 !important;
+    inset-block-start: 0 !important;
+    inset-inline-start: 0 !important;
+    position: relative !important;
+}
+
+.select2-container {
+    height: inherit !important;
+    width: auto !important;
+}
+
+.select2-selection.select2-selection--single {
+    height: inherit !important;
+    border: 1px solid var(--gray-200) !important;
+    background-color: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.radius-end-0 .select2-selection.select2-selection--single {
+    border-start-start-radius: 50px !important;
+    border-end-start-radius: 50px !important;
+}
+
+.select2-selection.select2-selection--single {
+    position: relative;
+}
+
+.select2-container .selection {
+    height: inherit;
+}
+
+.select2-selection__arrow {
+    right: 16px !important;
+    inset-block-start: 50% !important;
+    transform: translateY(-50%) !important;
+    width: unset !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-inline-start: 24px !important;
+    padding-inline-end: 40px !important;
+}
+
+.select-border-end-0 .select2-selection.select2-selection--single {
+    border-inline-end: 0 !important;
+}
+
+.select2-dropdown.select2-dropdown--below {
+    border: 1px solid var(--gray-100) !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+}
+
+.select2-search--dropdown {
+    padding: 0 !important;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid var(--gray-100) !important;
+    border-radius: 6px !important;
+    padding: 4px 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus-visible {
+    outline: 1px solid var(--main-600);
+}
+
+.select2-results {
+    margin-block-start: 8px !important;
+}
+
+.select2-results__option.select2-results__option--selectable {
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+    color: var(--gray-500);
+    font-size: 14px !important;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: var(--main-600) !important;
+    color: white !important;
+}
+
+.select2-results__option.select2-results__option--selectable:hover {
+    background-color: var(--main-100) !important;
+    color: var(--main-600) !important;
+}
+
+.select2-container--default .select2-results__option--selected, .select2-container--default .select2-results__option--selected:hover {
+    background-color: var(--main-600) !important;
+    color: #fff !important;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    padding-inline-end: 8px;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar {
+    width: 6px;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-track {
+    background: #e4e4e4;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb {
+    background: #a2a2a2;
+    border-radius: 50px;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb:hover {
+    background: #6d6d6d;
+}
+
+.select2-dropdown--below {
+    min-width: 200px;
+}
+
+.select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--main-600) !important;
+}
+
+.select2-container--open.select2-container--default .select2-selection--single .select2-selection__arrow b::before {
+    color: var(--main-600) !important;
+}
+
+/* Location Box Css  */
+.location-box .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-inline-start: 0px !important;
+    padding-inline-end: 50px !important;
+}
+
+.location-box .select2-selection__arrow {
+    right: 0px !important;
+    inset-block-start: 10% !important;
+}
+
+.location-box .select2-selection.select2-selection--single {
+    border: 0 !important;
+}
+
+.location-box .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 14px;
+    color: var(--gray-900);
+    font-weight: 700;
+    font-family: var(--heading-font-two);
+}
+
+/* ======================= Select 2 Css End =========================== */
 /* ================================= Typography Css Start =========================== */
 * {
     margin: 0;
@@ -1165,6 +1344,10 @@ button:focus {
     margin: var(--size-30) !important;
 }
 
+.m-32 {
+    margin: var(--size-32) !important;
+}
+
 .m-36 {
     margin: var(--size-36) !important;
 }
@@ -1311,6 +1494,10 @@ button:focus {
 
 .mx-30 {
     margin-inline: var(--size-30) !important;
+}
+
+.mx-32 {
+    margin-inline: var(--size-32) !important;
 }
 
 .mx-36 {
@@ -1461,6 +1648,10 @@ button:focus {
     margin-block: var(--size-30) !important;
 }
 
+.my-32 {
+    margin-block: var(--size-32) !important;
+}
+
 .my-36 {
     margin-block: var(--size-36) !important;
 }
@@ -1607,6 +1798,10 @@ button:focus {
 
 .ms-30 {
     margin-inline-start: var(--size-30) !important;
+}
+
+.ms-32 {
+    margin-inline-start: var(--size-32) !important;
 }
 
 .ms-36 {
@@ -1757,6 +1952,10 @@ button:focus {
     margin-inline-end: var(--size-30) !important;
 }
 
+.me-32 {
+    margin-inline-end: var(--size-32) !important;
+}
+
 .me-36 {
     margin-inline-end: var(--size-36) !important;
 }
@@ -1905,6 +2104,10 @@ button:focus {
     margin-block-start: var(--size-30) !important;
 }
 
+.mt-32 {
+    margin-block-start: var(--size-32) !important;
+}
+
 .mt-36 {
     margin-block-start: var(--size-36) !important;
 }
@@ -2051,6 +2254,10 @@ button:focus {
 
 .mb-30 {
     margin-block-end: var(--size-30) !important;
+}
+
+.mb-32 {
+    margin-block-end: var(--size-32) !important;
 }
 
 .mb-36 {
@@ -2320,6 +2527,10 @@ button:focus {
     padding: var(--size-30) !important;
 }
 
+.p-32 {
+    padding: var(--size-32) !important;
+}
+
 .p-36 {
     padding: var(--size-36) !important;
 }
@@ -2466,6 +2677,10 @@ button:focus {
 
 .px-30 {
     padding-inline: var(--size-30) !important;
+}
+
+.px-32 {
+    padding-inline: var(--size-32) !important;
 }
 
 .px-36 {
@@ -2616,6 +2831,10 @@ button:focus {
     padding-block: var(--size-30) !important;
 }
 
+.py-32 {
+    padding-block: var(--size-32) !important;
+}
+
 .py-36 {
     padding-block: var(--size-36) !important;
 }
@@ -2762,6 +2981,10 @@ button:focus {
 
 .ps-30 {
     padding-inline-start: var(--size-30) !important;
+}
+
+.ps-32 {
+    padding-inline-start: var(--size-32) !important;
 }
 
 .ps-36 {
@@ -2912,6 +3135,10 @@ button:focus {
     padding-inline-end: var(--size-30) !important;
 }
 
+.pe-32 {
+    padding-inline-end: var(--size-32) !important;
+}
+
 .pe-36 {
     padding-inline-end: var(--size-36) !important;
 }
@@ -3060,6 +3287,10 @@ button:focus {
     padding-block-start: var(--size-30) !important;
 }
 
+.pt-32 {
+    padding-block-start: var(--size-32) !important;
+}
+
 .pt-36 {
     padding-block-start: var(--size-36) !important;
 }
@@ -3206,6 +3437,10 @@ button:focus {
 
 .pb-30 {
     padding-block-end: var(--size-30) !important;
+}
+
+.pb-32 {
+    padding-block-end: var(--size-32) !important;
 }
 
 .pb-36 {
@@ -3392,8 +3627,16 @@ button:focus {
 /* ================================= Padding Css End =========================== */
 /* ================================= Classes Css Start =========================== */
 /* Section Background */
-.section-bg {
-    background-color: hsl(var(--section-bg)) !important;
+.bg-color-one {
+    background-color: var(--bg-color-one) !important;
+}
+
+.bg-color-two {
+    background-color: var(--bg-color-two) !important;
+}
+
+.bg-color-three {
+    background-color: var(--bg-color-three) !important;
 }
 
 .container-lg {
@@ -3423,12 +3666,32 @@ button:focus {
     min-width: max-content;
 }
 
+.inset-inline-start-0 {
+    inset-inline-start: 0;
+}
+
+.inset-inline-end-0 {
+    inset-inline-end: 0;
+}
+
+.inset-block-start-0 {
+    inset-block-start: 0;
+}
+
+.inset-block-end-0 {
+    inset-block-end: 0;
+}
+
 .start-auto {
     inset-inline-start: auto !important;
 }
 
 .end-auto {
     inset-inline-end: auto !important;
+}
+
+.line-height-1 {
+    line-height: 1;
 }
 
 /* Text Color */
@@ -3568,6 +3831,10 @@ button:focus {
 
 .w-30 {
     width: 1.875rem !important;
+}
+
+.w-32 {
+    width: 2rem !important;
 }
 
 .w-36 {
@@ -3718,6 +3985,10 @@ button:focus {
     height: 1.875rem !important;
 }
 
+.h-32 {
+    height: 2rem !important;
+}
+
 .h-36 {
     height: 2rem !important;
 }
@@ -3786,8 +4057,20 @@ button:focus {
     max-height: unset !important;
 }
 
+.max-h-200 {
+    max-height: 200px !important;
+}
+
 .max-w-unset {
     max-width: unset !important;
+}
+
+.top-n6 {
+    inset-block-start: -6px;
+}
+
+.end-n4 {
+    inset-inline-end: -6px;
 }
 
 .text-main-50 {
@@ -4505,6 +4788,10 @@ button:focus {
 
 .hover-text-main:hover {
     color: hsl(var(--main)) !important;
+}
+
+.item-hover:hover .item-hover__text {
+    color: var(--main-600) !important;
 }
 
 .border-main-50 {
@@ -6012,6 +6299,10 @@ button:focus {
     font-size: 1.875rem !important;
 }
 
+.text-32 {
+    font-size: 2rem !important;
+}
+
 .text-36 {
     font-size: 2rem !important;
 }
@@ -6186,6 +6477,10 @@ button:focus {
 
 .rounded-30 {
     border-radius: 1.875rem !important;
+}
+
+.rounded-32 {
+    border-radius: 2rem !important;
 }
 
 .rounded-36 {
@@ -6446,6 +6741,10 @@ button:focus {
     gap: var(--size-30) !important;
 }
 
+.gap-32 {
+    gap: var(--size-32) !important;
+}
+
 .gap-36 {
     gap: var(--size-36) !important;
 }
@@ -6605,6 +6904,10 @@ button:focus {
 
 /* =========================== header top Css End =============================== */
 /* =========================== header Middle Css Start =============================== */
+.search-input {
+    min-width: 520px;
+}
+
 /* =========================== header Middle Css End =============================== */
 /* ============= Header Start Here ======================= */
 .header {
@@ -6652,12 +6955,12 @@ button:focus {
 .toggle-mobileMenu {
     line-height: 1;
     font-size: 36px;
-    color: hsl(var(--heading-color));
+    color: var(--gray-400);
 }
 
 /* Header Menu and Submenu Css Start */
 .nav-menu {
-    gap: 24px;
+    gap: 32px;
 }
 
 .nav-menu__item.activePage > a {
@@ -6669,7 +6972,7 @@ button:focus {
 }
 
 .nav-menu__item:hover > a {
-    color: hsl(var(--heading-color));
+    color: var(--gray-400);
 }
 
 @media (min-width: 992px) {
@@ -6679,10 +6982,10 @@ button:focus {
 }
 
 .nav-menu__link {
-    color: hsl(var(--heading-color));
+    color: var(--gray-400);
     font-weight: 500;
     width: 100%;
-    padding: 38px 0;
+    padding: 16px 0;
     width: 100%;
 }
 
@@ -6721,11 +7024,11 @@ button:focus {
 
 .has-submenu > a::before {
     position: absolute;
-    content: "\f107";
+    content: "\e136";
     inset-inline-end: 0;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    font-family: "Font Awesome 5 Free";
+    font-family: "Phosphor";
     font-weight: 900;
     color: hsl(var(--heading-color)/0.4);
     transition: 0.2s linear;
@@ -6756,6 +7059,11 @@ button:focus {
     }
 }
 
+.nav-submenu--sm {
+    width: 132px;
+    min-width: unset;
+}
+
 .nav-submenu__item {
     display: block;
     border-radius: 4px;
@@ -6764,22 +7072,21 @@ button:focus {
 }
 
 .nav-submenu__item.activePage .nav-submenu__link {
-    color: hsl(var(--main));
-}
-
-.nav-submenu__item:hover a {
-    color: hsl(var(--heading-color));
+    color: hsl(var(--main)) !important;
 }
 
 .nav-submenu__link {
-    color: hsl(var(--heading-color));
+    color: var(--gray-400);
     font-weight: 500;
     width: 100%;
     padding-inline-end: 16px;
     width: 100%;
-    display: block;
     padding: 8px 14px;
     border-radius: inherit;
+}
+
+.nav-submenu__link:hover {
+    color: var(--gray-600) !important;
 }
 
 .nav-submenu__link::before {
@@ -7022,9 +7329,9 @@ button:focus {
 
 .progress-wrap::after {
     position: absolute;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Phosphor";
     font-weight: 900;
-    content: "\f062";
+    content: "\e08e";
     text-align: center;
     height: 46px;
     width: 46px;

@@ -54,3 +54,11 @@
         }
     }
 }
+
+.item-hover {
+  &:hover {
+    .item-hover__text {
+      color: var(--main-600) !important;
+    }
+  }
+}

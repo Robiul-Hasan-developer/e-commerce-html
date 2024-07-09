@@ -11,12 +11,10 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- select 2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <!-- Slick -->
     <!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
-    <!-- line awesome -->
-    <!-- <link rel="stylesheet" href="assets/css/line-awesome.min.css"> -->
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head> 
@@ -121,8 +119,8 @@
 
 
     <!-- ======================= Middle Top Start ========================= -->
-<div class="header-top bg-main-600 py-8 flex-between">
-    <div class="container">
+<div class="header-top bg-main-600 flex-between">
+    <div class="container container-lg">
         <div class="flex-between flex-wrap gap-8">
             <ul class="flex-align flex-wrap">
                 <li class="border-right-item"><a href="#" class="text-white text-sm">Become A Seller</a></li>
@@ -131,21 +129,117 @@
                 <li class="border-right-item"><a href="#" class="text-white text-sm">Returns Policy</a></li>
             </ul>
             <ul class="flex-align flex-wrap">
-                <li class="border-right-item border-right-item-sm-space has-submenu arrow-white"><a href="#" class="text-white text-sm">Help Center</a></li>
-                <li class="border-right-item border-right-item-sm-space has-submenu arrow-white"><a href="#" class="text-white text-sm">Eng</a></li>
-                <li class="border-right-item border-right-item-sm-space has-submenu arrow-white"><a href="#" class="text-white text-sm">USD</a></li>
+                <li class="border-right-item border-right-item-sm-space has-submenu arrow-white">
+                    <a href="#" class="text-white text-sm py-8">Help Center</a>
+                    <ul class="nav-submenu nav-submenu--sm max-h-200 scroll-sm px-0 py-8">
+                        <li class="nav-submenu__item">
+                            <a href="#" class="nav-submenu__link hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <span class="text-sm d-flex"><i class="ph ph-headset"></i></span>
+                                Call Center
+                            </a>
+                        </li>
+                        <li class="nav-submenu__item">
+                            <a href="#" class="nav-submenu__link hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <span class="text-sm d-flex"><i class="ph ph-chat-circle-dots"></i></span>
+                                Live Chat
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="border-right-item border-right-item-sm-space has-submenu arrow-white">
+                    <a href="#" class="text-white text-sm py-8">Eng</a>
+                    <ul class="nav-submenu nav-submenu--sm max-h-200 scroll-sm px-0 py-8">
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag1.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                English
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag2.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                Japan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag3.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                French
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag4.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                Germany
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag6.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                Bangladesh
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag5.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                South Korea
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="border-right-item border-right-item-sm-space has-submenu arrow-white">
+                    <a href="#" class="text-white text-sm py-8">USD</a>
+                   <ul class="nav-submenu nav-submenu--sm max-h-200 scroll-sm px-0 py-8">
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag1.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                USD
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag2.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                Yen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag3.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                Franc 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag4.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                EURO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag6.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                BDT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"> 
+                                <img src="assets/images/thumbs/flag5.png" alt="" class="w-16 h-12 rounded-4 border border-gray-100">
+                                WON
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="border-right-item">
-                    <a href="#" class="text-white text-sm flex-align gap-6"> <span class="icon text-xs"> <i class="fas fa-user"></i></span> My Account </a>
+                    <a href="#" class="text-white text-sm py-8 flex-align gap-6"> <span class="icon text-md d-flex"> <i class="ph ph-user-circle"></i> </span> My Account </a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 <!-- ======================= Middle Top End ========================= -->
-    
-    <!-- ==================== Header Start Here ==================== -->
-<header class="header bg-neutral-100">
-    <div class="container container-two">
+
+    <!-- ======================= Middle Header Start ========================= -->
+<header class="header-middle bg-color-one py-30 border-bottom border-gray-100">
+    <div class="container container-lg">
         <nav class="header-inner flex-between">
             <!-- Logo Start -->
             <div class="logo">
@@ -155,9 +249,97 @@
             </div>
             <!-- Logo End  -->
 
-            <!-- Menu Start  -->
-            <div class="header-menu d-lg-block d-none">
-                
+            <!-- Header Middle Start -->
+            <div class="flex-align gap-16 flex-wrap">
+                <form action="#" class="d-flex h-48 select-border-end-0 radius-end-0">
+                    <select class="js-example-basic-single border border-gray-200 border-end-0" name="state">
+                        <option value="1" selected disabled>All Categories</option>
+                        <option value="1">Grocery</option>
+                        <option value="1">Breakfast & Dairy</option>
+                        <option value="1">Vegetables</option>
+                        <option value="1">Milks and Dairies</option>
+                        <option value="1">Pet Foods & Toy</option>
+                        <option value="1">Breads & Bakery</option>
+                        <option value="1">Fresh Seafood</option>
+                        <option value="1">Fronzen Foods</option>
+                        <option value="1">Noodles & Rice</option>
+                        <option value="1">Ice Cream</option>
+                    </select>
+    
+                    <div class="position-relative">
+                        <input type="text" class="search-input common-input py-13 ps-16 pe-18 rounded-end-pill pe-44" placeholder="Search for a product or brand">
+                        <button type="submit" class="w-32 h-32 bg-main-600 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8"><i class="ph ph-magnifying-glass"></i></button>
+                    </div>
+                </form>
+
+                <div class="location-box bg-white flex-align gap-8 py-6 px-16 rounded-pill border border-gray-100">
+                    <span class="text-gray-900 text-xl d-flex"><i class="ph ph-map-pin"></i></span>
+                    <div class="line-height-1">
+                        <span class="text-gray-600 text-xs">Your Location</span>
+                        <div class="line-height-1">
+                            <select class="js-example-basic-single border border-gray-200 border-end-0" name="state">
+                                <option value="1">Florida</option>
+                                <option value="1">Grocery</option>
+                                <option value="1">Breakfast & Dairy</option>
+                                <option value="1">Vegetables</option>
+                                <option value="1">Milks and Dairies</option>
+                                <option value="1">Pet Foods & Toy</option>
+                                <option value="1">Breads & Bakery</option>
+                                <option value="1">Fresh Seafood</option>
+                                <option value="1">Fronzen Foods</option>
+                                <option value="1">Noodles & Rice</option>
+                                <option value="1">Ice Cream</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Header Middle start -->
+             
+            <!-- Header Middle Right start -->
+            <div class="header-right flex-align">
+                <div class="flex-align flex-wrap gap-8">
+                    <a href="profile.html" class="flex-align gap-4 item-hover">
+                        <span class="text-2xl text-gray-700 d-flex position-relative item-hover__text">
+                            <i class="ph ph-user"></i>
+                        </span>
+                        <span class="text-md text-gray-500 item-hover__text">Profile</span>
+                    </a>
+                    <a href="wishlisht.html" class="flex-align gap-4 item-hover">
+                        <span class="text-2xl text-gray-700 d-flex position-relative me-6 item-hover__text">
+                            <i class="ph ph-heart"></i>
+                            <span class="w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4">2</span>
+                        </span>
+                        <span class="text-md text-gray-500 item-hover__text">Wishlist</span>
+                    </a>
+                    <a href="cart.html" class="flex-align gap-4 item-hover">
+                        <span class="text-2xl text-gray-700 d-flex position-relative me-6 item-hover__text">
+                            <i class="ph ph-shopping-cart-simple"></i>
+                            <span class="w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4">2</span>
+                        </span>
+                        <span class="text-md text-gray-500 item-hover__text">Cart</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Header Middle Right End  -->
+        </nav>
+    </div>
+</header>
+<!-- ======================= Middle Header End ========================= -->
+
+    <!-- ==================== Header Start Here ==================== -->
+<header class="header bg-white border-bottom border-gray-100">
+    <div class="container container-lg">
+        <nav class="header-inner d-flex justify-content-between">
+            <div class="flex-align gap-20">
+                <!-- Category Dropdown Start -->
+                 <span class="text-heading">All Categories</span>
+                <!-- Category Dropdown End  -->
+    
+                <!-- Menu Start  -->
+                <div class="header-menu d-lg-block d-none">
+                    
 <ul class="nav-menu flex-align ">
     <li class="nav-menu__item has-submenu">
         <a href="javascript:void(0)" class="nav-menu__link">Home</a>
@@ -213,15 +395,15 @@
         <a href="#" class="nav-menu__link">Contact</a>
     </li>
 </ul>
+                </div>
+                <!-- Menu End  -->
             </div>
-            <!-- Menu End  -->
 
             <!-- Header Right start -->
             <div class="header-right flex-align">
-                <a href="register.html" class="btn btn-main btn-sm d-lg-block d-none">Login 
-                    <span class="icon-right icon"> 
-                        <i class="las la-user"></i>
-                    </span> 
+                <a href="tel:01- 234 567 890" class="bg-main-600 text-white p-12 h-100 hover-bg-main-800 flex-align gap-8 text-lg"> 
+                    <div class="d-flex text-32"><i class="ph ph-phone-call"></i></div>
+                    01- 234 567 890
                 </a>
                 <button type="button" class="toggle-mobileMenu d-lg-none ms-3"> <i class="las la-bars"></i> </button>
             </div>
@@ -345,6 +527,12 @@
 
     <!-- Bootstrap Bundle Js -->
     <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Select 2 -->
+    <script src="assets/js/select2.min.js"></script>
+
+    
     <!-- Slick js -->
     <!-- <script src="assets/js/slick.min.js"></script> -->
 

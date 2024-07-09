@@ -1,8 +1,16 @@
 
 /* ================================= Classes Css Start =========================== */
 /* Section Background */
-.section-bg {
-    background-color: hsl(var(--section-bg)) !important;
+.bg-color {
+    &-one {
+        background-color: var(--bg-color-one) !important;
+    }
+    &-two {
+        background-color: var(--bg-color-two) !important;
+    }
+    &-three {
+        background-color: var(--bg-color-three) !important;
+    }
 }
 
 .container-lg {
@@ -33,6 +41,21 @@
     min-width: max-content;
 }
 
+.inset {
+    &-inline-start-0 {
+        inset-inline-start: 0;
+    }
+    &-inline-end-0 {
+        inset-inline-end: 0;
+    }
+    &-block-start-0 {
+        inset-block-start: 0;
+    }
+    &-block-end-0 {
+        inset-block-end: 0;
+    }
+}
+
 .start {
     &-auto {
         inset-inline-start: auto !important;
@@ -43,6 +66,10 @@
     &-auto {
         inset-inline-end: auto !important;
     }
+}
+
+.line-height-1 {
+    line-height: 1;
 }
 
 /* Text Color */

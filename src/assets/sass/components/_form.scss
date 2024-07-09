@@ -7,7 +7,7 @@
     width: 100%;
     padding: 17px 24px;
     background-color: transparent !important; 
-    border: 1px solid var(--neutral-300);
+    border: 1px solid var(--gray-200);
     color: hsl(var(--black)); 
     line-height: 1;
      
@@ -19,9 +19,9 @@
          
     }
     &::placeholder {
-        color: var(--neutral-600);
-        color: hsl(var(--light));
-        transition: .25s linear;
+        color: var(--gray-500);
+        transition: .2s linear;
+        font-size: rem(14px);
         font-weight: 400;
     }
     &--md {
@@ -120,7 +120,7 @@ textarea+.input-icon {
         inset-inline-end: 20px;
         inset-block-start: 50%;
         transform: translateY(-50%);
-        font-family: "Font Awesome 5 Free";
+        font-family: "Phosphor";
         font-weight: 900;
          
         color: hsl(var(--main)); 
@@ -256,7 +256,7 @@ input[type=number]{
         &::before {
             position: absolute;
             content: "\f00c";
-            font-family: "Font Awesome 5 Free";
+            font-family: "Phosphor";
             font-weight: 900;
             color: hsl(var(--white)); 
             font-size: 12px;

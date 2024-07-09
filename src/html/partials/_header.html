@@ -1,29 +1,26 @@
 <!-- ==================== Header Start Here ==================== -->
-<header class="header bg-neutral-100">
-    <div class="container container-two">
-        <nav class="header-inner flex-between">
-            <!-- Logo Start -->
-            <div class="logo">
-                <a href="index.html" class="link">
-                    <img src="assets/images/logo/logo.png" alt="Logo">
-                </a>
+<header class="header bg-white border-bottom border-gray-100">
+    <div class="container container-lg">
+        <nav class="header-inner d-flex justify-content-between">
+            <div class="flex-align gap-20">
+                <!-- Category Dropdown Start -->
+                 <span class="text-heading">All Categories</span>
+                <!-- Category Dropdown End  -->
+    
+                <!-- Menu Start  -->
+                <div class="header-menu d-lg-block d-none">
+                    @@include('../partials/_nav-menu.html', {
+                        "class" : ""
+                    })
+                </div>
+                <!-- Menu End  -->
             </div>
-            <!-- Logo End  -->
-
-            <!-- Menu Start  -->
-            <div class="header-menu d-lg-block d-none">
-                @@include('../partials/_nav-menu.html', {
-                    "class" : ""
-                })
-            </div>
-            <!-- Menu End  -->
 
             <!-- Header Right start -->
             <div class="header-right flex-align">
-                <a href="register.html" class="btn btn-main btn-sm d-lg-block d-none">Login 
-                    <span class="icon-right icon"> 
-                        <i class="las la-user"></i>
-                    </span> 
+                <a href="tel:01- 234 567 890" class="bg-main-600 text-white p-12 h-100 hover-bg-main-800 flex-align gap-8 text-lg"> 
+                    <div class="d-flex text-32"><i class="ph ph-phone-call"></i></div>
+                    01- 234 567 890
                 </a>
                 <button type="button" class="toggle-mobileMenu d-lg-none ms-3"> <i class="las la-bars"></i> </button>
             </div>

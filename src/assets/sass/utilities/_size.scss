@@ -11,10 +11,24 @@
     }
 }
 
-.max-h-unset {
+.max-h {
+  &-unset {
     max-height: unset !important;
+  }
+  &-200 {
+    max-height: 200px !important;
+  }
 }
 
 .max-w-unset {
     max-width: unset !important;
+}
+
+
+.top-n6 {
+  inset-block-start: -6px;
+}
+
+.end-n4 {
+  inset-inline-end: -6px;
 }
