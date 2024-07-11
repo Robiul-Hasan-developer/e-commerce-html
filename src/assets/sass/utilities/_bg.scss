@@ -17,3 +17,11 @@
       }
     }
   }
+
+  .hover-bg {
+    &-white {
+      &:hover {
+        background-color: hsl(var(--white)) !important;
+      }
+    }
+  }

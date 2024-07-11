@@ -42,4 +42,71 @@
 </div>
 <!-- ==================== Scroll to Top End Here ==================== -->
 
+<!-- ==================== Search Box Start Here ==================== -->
+ <form action="#" class="search-box">
+  <button type="button" class="search-box__close position-absolute inset-block-start-0 inset-inline-end-0 m-16 w-48 h-48 border border-gray-100 rounded-circle flex-center text-white hover-text-gray-800 hover-bg-white text-2xl transition-1">
+    <i class="ph ph-x"></i>
+  </button>
+  <div class="container">
+    <div class="position-relative">
+      <input type="text" class="form-control py-16 px-24 text-xl rounded-pill pe-64" placeholder="Search for a product or brand">
+      <button type="submit" class="w-48 h-48 bg-main-600 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8">
+        <i class="ph ph-magnifying-glass"></i>
+      </button>
+    </div>
+  </div>
+ </form>
+<!-- ==================== Search Box End Here ==================== -->
+
+ 
+<!-- ==================== Mobile Bottom Navbar Start Here ==================== -->
+ <div class="mobile-sticky-navbar px-16 py-8 d-md-none d-block">
+    <form action="#" class="flex-align gap-8 form-location-wrapper">
+      
+      <div class="w-50 location-box bg-white d-sm-flex align-items-center gap-8 py-2 px-8 rounded-pill border border-gray-100">
+        <span class="text-gray-900 text-xl d-sm-flex d-none"><i class="ph ph-map-pin"></i></span>
+        <div class="line-height-1 flex-grow-1">
+            <span class="text-gray-600 text-xs">Your Location</span>
+            <div class="line-height-1">
+                <select class="js-example-basic-single border border-gray-200 border-end-0" name="state">
+                    <option value="1">Florida</option>
+                    <option value="1">Grocery</option>
+                    <option value="1">Breakfast & Dairy</option>
+                    <option value="1">Vegetables</option>
+                    <option value="1">Milks and Dairies</option>
+                    <option value="1">Pet Foods & Toy</option>
+                    <option value="1">Breads & Bakery</option>
+                    <option value="1">Fresh Seafood</option>
+                    <option value="1">Fronzen Foods</option>
+                    <option value="1">Noodles & Rice</option>
+                    <option value="1">Ice Cream</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+      <div class="w-50 d-flex h-48 select-border-end-0 radius-end-0 search-form">
+          <select class="js-example-basic-single border border-gray-200 border-end-0 w-100" name="state">
+              <option value="1" selected disabled>All Categories</option>
+              <option value="1">Grocery</option>
+              <option value="1">Breakfast & Dairy</option>
+              <option value="1">Vegetables</option>
+              <option value="1">Milks and Dairies</option>
+              <option value="1">Pet Foods & Toy</option>
+              <option value="1">Breads & Bakery</option>
+              <option value="1">Fresh Seafood</option>
+              <option value="1">Fronzen Foods</option>
+              <option value="1">Noodles & Rice</option>
+              <option value="1">Ice Cream</option>
+          </select>
+
+          <div class="search-form__wrapper position-relative">
+              <input type="text" class="search-form__input common-input py-13 ps-16 pe-18 rounded-end-pill pe-44" placeholder="Search for a product or brand">
+              <button type="submit" class="w-32 h-32 bg-main-600 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8"><i class="ph ph-magnifying-glass"></i></button>
+          </div>
+      </div>
+  </form>
+ </div>
+<!-- ==================== Mobile Bottom Navbar End Here ==================== -->
+
 @@include('../partials/_mobile-menu.html')

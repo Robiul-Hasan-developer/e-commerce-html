@@ -30,9 +30,11 @@
     transition: .2s linear;
     visibility: hidden;
     opacity: 0;
-    &.show {
-        visibility: visible;
-        opacity: 1;
+    @include md-screen {
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }
 /* Overlay End */

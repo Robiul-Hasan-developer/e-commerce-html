@@ -1,9 +1,6 @@
 /* ============= Header Start Here ======================= */
 .header {
     transition: .2s linear;
-    @include md-screen {
-        padding: 10px 0;
-    }
     &.fixed-header {
         position: sticky;
         inset-inline-start: 0;
@@ -31,18 +28,21 @@
 .logo {
     img {
         max-width: 200px;
+        @include xsm-screen {
+            max-width: 148px;
+        }
     }
-}
-
-.toggle-mobileMenu {
-    line-height: 1;
-    font-size: 36px;
-    color: var(--gray-400);
 }
 
 /* Header Menu and Submenu Css Start */
 .nav-menu {
     gap: 32px;
+    @include xl-screen {
+        gap: 24px;
+    }
+    @include lg-screen {
+        gap: 16px;
+    }
     &__item {
         &.activePage {
             > a {
@@ -67,7 +67,22 @@
         width: 100%;
         padding: 16px 0;
         width: 100%;
+        @media (max-width: 1299px) {
+            font-size: rem(14px);
+        } 
+        @include lg-screen {
+            font-size: rem(13px);
+        }
     }   
+
+    .common-dropdown__link {
+        @media (max-width: 1299px) {
+            font-size: rem(14px);
+        } 
+        @include lg-screen {
+            font-size: rem(13px);
+        }
+    }
 }
 
 .has-submenu {
@@ -84,21 +99,6 @@
         }
         > a::before {
             transform: translateY(-50%) rotate(180deg) !important; 
-        }
-    }
-    &:hover {
-        .nav-submenu {
-            visibility: visible;
-            opacity: 1;
-            margin-block-start: 0;
-        }
-        > a {
-            &::before {
-                @media (min-width: 992px) {
-                    color: hsl(var(--main));
-                    transform: translateY(-50%) rotate(180deg);
-                }
-            }
         }
     }
     > a {
@@ -118,7 +118,7 @@
 }
 
 /* Submenu Start */
-.nav-submenu {
+.common-dropdown {
     position: absolute;
     inset-inline-start: 0;
     @extend .box-shadow-lg; 
@@ -129,9 +129,6 @@
     min-width: 190px;
     overflow: hidden;
     padding: 8px;
-    visibility: hidden;
-    opacity: 0;
-    margin-block-start: 16px;
     transition: .2s linear;
     z-index: 99;
     @media (min-width: 992px) {
@@ -147,8 +144,11 @@
         border-radius: 4px;
         transition: .2s linear;
         position: relative;
+        @include md-screen {
+            border-radius: 0;
+        }
         &.activePage {
-            .nav-submenu {
+            .common-dropdown {
                 &__link {
                     color: hsl(var(--main)) !important;
                 }
@@ -173,4 +173,96 @@
 }
 /* Submenu End */
 /* Header Menu and Submenu Css End */
+
+
+/* Category Submenus Submenu Css Start */
+.menu-category-wrapper {
+    gap: clampCal(12, 72, 1199, 1699);
+}
+
+.submenus-submenu-wrapper {
+    overflow: unset;
+}
+
+.submenus-submenu {
+    position: absolute;
+    z-index: 99999999999;
+    background: hsl(var(--white));
+    width: 300px;
+    inset-inline-start: 100%;
+    inset-block-start: 0px;
+    @extend .box-shadow-lg;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    &__list {
+        li {
+            a {
+                padding: 10px 16px;
+                padding-inline-start: 32px;
+                display: block;
+                color: var(--gray-500);
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    inset-inline-start: 16px;
+                    inset-block-start: 50%;
+                    transform: translateY(-50%);
+                    background: var(--gray-300);
+                    border-radius: 80%;
+                    transition: 0.2s linear;
+                }
+                &:hover {
+                    background-color: var(--gray-50);
+                    color: var(--gray-800);
+                    font-weight: 600;
+                    &::before {
+                        background: var(--gray-600);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 991px) {
+    .has-submenus-submenu {
+        &:hover {
+            > a {
+                background-color: var(--gray-50);
+                color: var(--gray-900) !important;
+                font-weight: 600;
+            }
+            .submenus-submenu {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    } 
+}
+
+.category {
+    .category__button {
+        @include sm-screen {
+            padding: 8px 3px !important;
+            font-size: 12px !important;
+        }
+    }
+    @media (min-width: 992px) {
+        &:hover {
+            .category__button {
+                color: var(--main-600) !important;
+                background-color: var(--gray-50) !important;
+                .arrow-icon i::before {
+                    content: "\E13C";
+                }
+            }
+        }
+    }
+}
+/* Category Submenus Submenu Css End */
 /* ================================= Header Css End =========================== */

@@ -1,0 +1,18 @@
+
+.banner-item {
+    padding-block-start: clampCal(60, 100);
+    padding-block-end: clampCal(100, 220);
+    padding-inline-start: clampCal(40, 142);
+    padding-inline-end: clampCal(40, 142);
+
+    -webkit-mask-image: url(../images/thumbs/banner-bg-shape.png);
+    mask-image: url(../images/thumbs/banner-bg-shape.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background: #C9E3B5;
+    mask-position: top;
+    mask-size: 100% 100%;
+    &__title {
+        padding-block-end: clampCal(24, 60);
+    }
+}

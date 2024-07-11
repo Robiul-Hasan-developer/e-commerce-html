@@ -109,6 +109,49 @@
   // ========================== Select2 Js End =================================
 
   
+  // ========================== Select2 Js End =================================
+  $('.search-icon').on('click', function () {
+    $('.search-box').addClass('active'); 
+  }); 
+  $('.search-box__close').on('click', function () {
+    $('.search-box').removeClass('active'); 
+  }); 
+  // ========================== Select2 Js End =================================
+
+  
+  // ========================== Category Dropdown Responsive Js Start =================================
+  $('.responsive-dropdown .has-submenus-submenu').on('click', function () {
+
+    var windowWidth = $(window).width(); 
+    if(windowWidth < 992) { 
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).children('.submenus-submenu').slideUp();
+      } else {
+        $('.responsive-dropdown .has-submenus-submenu').removeClass('active');
+        $('.responsive-dropdown .has-submenus-submenu').children('.submenus-submenu').slideUp();
+  
+        $(this).addClass('active');
+        $(this).children('.submenus-submenu').slideDown();
+      }
+    }
+  });
+  // ========================== Category Dropdown Responsive Js End =================================
+
+  // ========================== On Click Category menu show Js Start =================================
+  $('.category__button').on('click', function () {    
+    $('.responsive-dropdown').addClass('active'); 
+    $('.side-overlay').addClass('show');
+    $('body').addClass('scroll-hide-sm');
+  }); 
+  $('.side-overlay, .close-responsive-dropdown').on('click', function () {    
+    $('.responsive-dropdown').removeClass('active'); 
+    $('.side-overlay').removeClass('show');
+    $('body').removeClass('scroll-hide-sm');
+  }); 
+  // ========================== On Click Category menu show Js End =================================
+
+  
   // ========================= Testimonial Four Slider Js Start ==============
   // $('.testimonial-four-slider').slick({
   //   slidesToShow: 2,

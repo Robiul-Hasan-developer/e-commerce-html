@@ -14,19 +14,12 @@
     color: hsl(var(--white)) !important;
     z-index: 1;
     line-height: 1;
-    text-transform: uppercase;
-    padding: 22px 30px;
-    @include md-screen {
-        padding: 17px 20px; 
-    }
-    @include sm-screen {
-        padding: 14px 20px; 
-    }
+    padding: 13px 24px;
     &:hover, &:focus, &:focus-visible {
         box-shadow: none !important;
     }
     &-sm {
-        padding: 14px 20px !important;
+        padding: 10px 16px !important;
     }
     &:active {
         transform: scale(1.01);

@@ -5,6 +5,12 @@
     }
 }
 
+.w {
+  &-300 {
+    width: 300px !important;
+  }
+}
+
 @each $property, $value in $spaces {
     .h-#{$property} {
       height: $value !important;
@@ -17,6 +23,12 @@
   }
   &-200 {
     max-height: 200px !important;
+  }
+  &-300 {
+    max-height: 300px !important;
+  }
+  &-400 {
+    max-height: 400px !important;
   }
 }
 

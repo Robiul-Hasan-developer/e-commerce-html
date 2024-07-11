@@ -1,4 +1,33 @@
 /* =========================== header top Css Start =============================== */
+.header-top {
+    &__right {
+        @include sm-screen {
+            width: 100%;
+            li {
+                &:last-child {
+                    margin-inline-start: auto;
+                }
+                &:nth-last-child(2) {
+                    margin-inline-end: 0 !important;
+                    padding-inline-end: 0 !important;
+                    &::before {
+                        display: none;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+@include md-screen {
+    .border-right-item {
+        a {
+            font-size: 12px !important;
+        }
+    }
+}
+
 .border-right-item {
     position: relative;
     &:not(:last-child) {
@@ -40,4 +69,5 @@
         }
     }
 }
+
 /* =========================== header top Css End =============================== */
