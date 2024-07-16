@@ -46,5 +46,22 @@
             border-color: hsl(var(--main)/.4) !important;
         }
     }
+    &-main-two {
+        background-color: hsl(var(--main-two)) !important;
+        border-color: hsl(var(--main-two)) !important;
+        &:hover {
+            background-color: var(--main-two-800) !important;
+            border-color: var(--main-two-800) !important;
+        }
+    }
+    &-outline-main-two {
+        background-color: transparent!important;
+        border-color: hsl(var(--main-two)) !important;
+        color: hsl(var(--main-two)) !important;
+        &:hover {
+            background-color: hsl(var(--main-two)/.15) !important;
+            border-color: hsl(var(--main-two)/.4) !important;
+        }
+    }
 }
 /* ================================= Button Css End =========================== */

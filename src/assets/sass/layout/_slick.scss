@@ -55,14 +55,25 @@
     inset-inline-start: auto;
     inset-block-start: auto;
     inset-inline-end: 0;
-    inset-block-end: calc(100% + 50px);
-    width: 48px;
-    height: 48px;
+    inset-block-end: calc(100% + 38px);
+    background-color: transparent;
+    border: 1px solid var(--gray-200);
+    width: 40px;
+    height: 40px;
     border-radius: 5px;
     transform: unset;
+    border-radius: 50%;
+    box-shadow: none;
+    &:hover {
+      background-color: var(--main-600);
+      border-color: var(--main-600);
+    }
+    @include lg-screen {
+      inset-block-end: calc(100% + 20px);
+  }
   }
   .slick-prev {
-    inset-inline-end: 60px;
+    inset-inline-end: calc(40px + 8px);
   }
   .slick-next {
     transform: translateX(0px);

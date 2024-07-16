@@ -12,6 +12,9 @@
         padding: clampCal(6, 12, 1399, 1599) clampCal(8, 16, 1399, 1599);
         border-radius: 8px;
         position: relative;
+        @include xl-screen {
+            font-size: rem(12px) !important;
+        }
         &:last-child {
             &::before {
                 display: none;
@@ -26,6 +29,11 @@
             font-weight: 700;
             @include xl-screen {
                 display: none;
+            }
+        }
+        &.colon-white {
+            &::before {
+                color: #fff;
             }
         }
     }

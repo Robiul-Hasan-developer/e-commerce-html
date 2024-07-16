@@ -191,16 +191,48 @@
     ]
   });  
   // ========================= Testimonial Four Slider Js End ===================
+  
+
+  // ========================= Arrow Down Scroll Js Start ===================
+  // $(function() {
+  //   $('a[href*=#]').on('click', function(e) {
+  //     e.preventDefault();
+  //     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 100, 'linear');
+  //   });
+  // });
+  // ========================= Arrow Down Scroll Js End ===================
+
+    
+  // ========================= Testimonial Four Slider Js Start ==============
+  $('.flash-sales__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="ph ph-caret-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="ph ph-caret-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      }
+    ]
+  });  
+  // ========================= Testimonial Four Slider Js End ===================
 
   
-  // ========================= Arrow Down Scroll Js Start ===================
-  $(function() {
-    $('a[href*=#]').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 100, 'linear');
-    });
-  });
-  // ========================= Arrow Down Scroll Js End ===================
+
   
 
   // ========================= Wow Js Start ===================
