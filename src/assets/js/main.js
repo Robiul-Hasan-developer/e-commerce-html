@@ -152,32 +152,60 @@
   // ========================== On Click Category menu show Js End =================================
 
   
+  // ========================== Set Language in dropdown Js Start =================================
+  $('.selectable-text-list li').each(function () {
+    var thisItem = $(this); 
+
+    thisItem.on('click', function () {
+      const listText = thisItem.text(); 
+      var item = thisItem.parent().parent().find('.selected-text').text(listText); 
+    }); 
+  }); 
+  // ========================== Set Language in dropdown Js End =================================
+
+  
   // ========================= Testimonial Four Slider Js Start ==============
-  // $('.testimonial-four-slider').slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   speed: 1500,
-  //   dots: true,
-  //   pauseOnHover: true,
-  //   arrows: false,
-  //   draggable: true,
-  //   speed: 900,
-  //   infinite: true,
-  //   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-  //   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
-  //   responsive: [
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         arrows: false,
-  //       }
-  //     }
-  //   ]
-  // });
+  $('.banner-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="ph ph-caret-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="ph ph-caret-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      }
+    ]
+  });  
   // ========================= Testimonial Four Slider Js End ===================
+
+  
+  // ========================= Arrow Down Scroll Js Start ===================
+  $(function() {
+    $('a[href*=#]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 100, 'linear');
+    });
+  });
+  // ========================= Arrow Down Scroll Js End ===================
+  
+
+  // ========================= Wow Js Start ===================
+  // new WOW().init();
+  // ========================= Wow Js End ===================
   
    // ========================= Counter Up Js End ===================
   //  const counterUp = window.counterUp.default;

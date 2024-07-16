@@ -58,36 +58,27 @@
 }
 
 
-.py-120 {
+.py-80 {
   padding-block-start: 60px !important;
   padding-block-end: 60px !important;
-  @media (min-width: 576px) {
-    padding-block-start: 80px !important;
-    padding-block-end: 80px !important;
-  }
   @media (min-width: 992px) {
-    padding-block-start: 120px !important;
-    padding-block-end: 120px !important;
-  }
-}
-.pt-120 {
-    padding-block-start: 60px !important;
-    @media (min-width: 576px) {
     padding-block-start: 80px !important;
-  }
-    @media (min-width: 992px) {
-    padding-block-start: 120px !important;
-  }
-}
-.pb-120 {
-    padding-block-end: 60px !important;
-    @media (min-width: 576px) {
     padding-block-end: 80px !important;
   }
+}
+.pt-80 {
+    padding-block-start: 60px !important;
     @media (min-width: 992px) {
-    padding-block-end: 120px !important;
+    padding-block-start: 80px !important;
   }
 }
+.pb-80 {
+    padding-block-end: 60px !important;
+    @media (min-width: 992px) {
+    padding-block-end: 80px !important;
+  }
+}
+
 .py-60 {
     padding-block-start: 30px !important;
     padding-block-end: 30px !important;

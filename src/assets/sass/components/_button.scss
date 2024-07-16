@@ -18,6 +18,10 @@
     &:hover, &:focus, &:focus-visible {
         box-shadow: none !important;
     }
+    @include xl-screen {
+        padding: 10px 20px;         
+        font-size: rem(14px);
+    }
     &-sm {
         padding: 10px 16px !important;
     }

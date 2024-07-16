@@ -1,0 +1,33 @@
+/* ========================= flash sales Start ================================ */
+.flash-sales-item {
+    padding: 40px 32px;
+}
+.countdown-list {
+    gap: 20px;
+    @include xl-screen {
+        gap: 6px;
+    }
+    &__item {
+        background-color: hsl(var(--white));
+        padding: clampCal(6, 12, 1399, 1599) clampCal(8, 16, 1399, 1599);
+        border-radius: 8px;
+        position: relative;
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: ":";
+            inset-block-start: 50%;
+            inset-inline-end: -10px;
+            transform: translateY(-50%);
+            font-weight: 700;
+            @include xl-screen {
+                display: none;
+            }
+        }
+    }
+}
+/* ========================= flash sales End ================================ */
