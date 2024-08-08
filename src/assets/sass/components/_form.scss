@@ -10,7 +10,10 @@
     border: 1px solid var(--gray-200);
     color: hsl(var(--black)); 
     line-height: 1;
-     
+    &.style-two {
+        background-color: hsl(var(--white)) !important;
+        color: hsl(var(--black)); 
+    }
     @include md-screen {
         padding: 12px 24px;
     }

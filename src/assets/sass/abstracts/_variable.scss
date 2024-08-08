@@ -34,11 +34,10 @@ $colors: (
     "300": #B3B3B3,
     "400": #999999,
     "500": #808080,
-    "600": #666666,
-    "700": #4D4D4D,
-    "800": #333333,
+    "600": #121535,
+    "700": #060710,
+    "800": #11132e,
     "900": #1A1A1A,
-    "950": #0D0D0D,
   ),
   
   "gray": (
@@ -128,6 +127,12 @@ $colors: (
     "800": #1E40AF,
     "900": #1E3A8A
   ),
+
+  "tertiary": (
+    "50": #d1c8ff,
+    "100": #c2b6ff,
+    "600": #3C23B5,
+  ),
 );
 
 // Space
@@ -160,6 +165,7 @@ $spaces: (
   "48": #{rem(48px)},
   "52": #{rem(52px)},
   "56": #{rem(56px)},
+  "60": #{rem(60px)},
   "64": #{rem(64px)},
   "68": #{rem(68px)},
   "72": #{rem(72px)},
@@ -209,9 +215,9 @@ $font-sizes: (
   --main: var(--main-h) var(--main-s) var(--main-l);
 
   /* template main color */
-  --main-two-h: 50;
+  --main-two-h: 25;
   --main-two-s: 100%;
-  --main-two-l: 64%;
+  --main-two-l: 49%;
   --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
 
    /* White Color */
@@ -227,6 +233,7 @@ $font-sizes: (
   --bg-color-one: #F3FAF2; 
   --bg-color-two: #FFFBF4; 
   --bg-color-three: #F1F1F1; 
+  --neutral: #121535; 
 
   --translate-x-middle: translateX(-50%); 
   --translate-y-middle: translateY(-50%); 

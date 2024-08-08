@@ -17,6 +17,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 p {
@@ -109,5 +110,8 @@ button {
 .form-select:focus {
   outline: 0;
   box-shadow: none;
+}
+input:focus-visible {
+  outline: 0;
 }
 /* ================================= Typography Css End =========================== */

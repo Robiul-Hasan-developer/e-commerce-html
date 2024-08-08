@@ -6,6 +6,13 @@
     }
   }
 }
+.item-hover-two {
+  &:hover {
+    .item-hover__text {
+      color: var(--main-two-600) !important;
+    }
+  }
+}
 
 
 

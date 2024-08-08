@@ -16,4 +16,13 @@
         }
       }
     }
+}
+
+.border {
+  &-dashed {
+    border-style: dashed !important;
   }
+  &-dotted {
+    border-style: dotted !important;
+  }
+}

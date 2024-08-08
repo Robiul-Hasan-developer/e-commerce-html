@@ -49,6 +49,7 @@
     &-main-two {
         background-color: hsl(var(--main-two)) !important;
         border-color: hsl(var(--main-two)) !important;
+        color: hsl(var(--white)) !important;
         &:hover {
             background-color: var(--main-two-800) !important;
             border-color: var(--main-two-800) !important;
@@ -61,6 +62,44 @@
         &:hover {
             background-color: hsl(var(--main-two)/.15) !important;
             border-color: hsl(var(--main-two)/.4) !important;
+        }
+    }
+    &-white {
+        background-color: hsl(var(--white)) !important;
+        border-color: hsl(var(--white)) !important;
+        color: hsl(var(--heading-color)) !important;
+        &:hover {
+            background-color: hsl(var(--white)/.9) !important;
+            border-color: hsl(var(--white)/.9) !important;
+        }
+    }
+    &-outline-white {
+        background-color: transparent!important;
+        border-color: hsl(var(--white)) !important;
+        color: hsl(var(--white)) !important;
+        &:hover {
+            background-color: hsl(var(--white)) !important;
+            border-color: hsl(var(--white)) !important;
+            color: hsl(var(--heading-color)) !important;
+        }
+    }
+    &-black {
+        background-color: hsl(var(--black)) !important;
+        border-color: hsl(var(--black)) !important;
+        color: hsl(var(--white)) !important;
+        &:hover {
+            background-color: hsl(var(--black)/.8) !important;
+            border-color: hsl(var(--black)/.8) !important;
+        }
+    }
+    &-outline-black {
+        background-color: transparent!important;
+        border-color: hsl(var(--black)) !important;
+        color: hsl(var(--black)) !important;
+        &:hover {
+            background-color: hsl(var(--black)) !important;
+            border-color: hsl(var(--black)) !important;
+            color: hsl(var(--white)) !important;
         }
     }
 }

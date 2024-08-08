@@ -190,4 +190,24 @@
         font-family: var(--heading-font-two);
     }
 }
+
+
+.select2-container--open .select2-dropdown {
+    @include md-screen {
+        left: -74px;
+    }
+    @include xsm-screen {
+        left:   -40px;
+    }
+}
+
+
+@include md-screen {
+    .location-box, .search-category.h-48 {
+        height: 40px !important;
+        .select2-selection__rendered {
+            font-size: 12px;
+        }
+    }
+}
 /* ======================= Select 2 Css End =========================== */

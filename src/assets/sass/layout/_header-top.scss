@@ -17,6 +17,37 @@
                
             }
         }
+        &.style-two {
+           > li {
+                padding-inline-end: 16px !important; 
+                margin-inline-end: 0 !important;
+                &:last-child {
+                    padding-inline-end: 0 !important;
+                }
+                &::before {
+                    display: none !important;
+                }
+                a {
+                    padding-inline-end: 20px;
+                    @include md-screen {
+                        color: #fff !important;
+                    }
+                    &::before {
+                        color: var(--heading-color) !important;
+                        font-size: 14px !important;
+                    }
+                }
+                > ul {
+                    inset-inline-end: auto !important;
+                    inset-inline-start: calc(-100% + -24px) !important;
+                    li a {
+                        @include md-screen {
+                            color: var(--neutral-600) !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

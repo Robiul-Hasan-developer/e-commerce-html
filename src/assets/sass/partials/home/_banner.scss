@@ -1,15 +1,14 @@
 /* ============================== Banner Css Start ========================== */
 .banner {
+    margin-top: 32px;
+    @include sm-screen {
+        margin-bottom: 32px;
+    }
     .slick-slider {
         position: unset;
     }
     .slick-initialized.slick-slider .slick-slide {
         margin: 0;
-    }
-    .banner {
-        @include msm-screen {
-            margin-bottom: 32px;
-        }
     }
 }
 

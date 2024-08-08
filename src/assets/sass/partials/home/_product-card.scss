@@ -17,6 +17,21 @@
             width: 100%;
         }
     }
+
+    &.style-two {
+        .product-card {
+            &__thumb {
+                width: 260px;
+                height: 190px;
+                @include md-screen {
+                    width: 190px;
+                }
+                @include msm-screen {
+                    width: 124px;
+                }
+            }
+        }
+    }
 }
 
 @include lg-screen {

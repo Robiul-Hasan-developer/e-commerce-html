@@ -164,7 +164,7 @@
   // ========================== Set Language in dropdown Js End =================================
 
   
-  // ========================= Testimonial Four Slider Js Start ==============
+  // ========================= Banner Slider Js Start ==============
   $('.banner-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -178,32 +178,49 @@
     rtl: $('html').attr('dir') === 'rtl' ? true : false,
     speed: 900,
     infinite: true,
-    prevArrow: '<button type="button" class="slick-prev"><i class="ph ph-caret-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="ph ph-caret-right"></i></button>',
+    nextArrow: '#banner-next',
+    prevArrow: '#banner-prev',
     responsive: [
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
-          arrows: false,
         }
       }
     ]
   });  
-  // ========================= Testimonial Four Slider Js End ===================
+  // ========================= Banner Slider Js End ===================
+
   
+  // ========================= Banner Slider Js Start ==============
+  $('.banner-item-two__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: true,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#banner-next',
+    prevArrow: '#banner-prev',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });  
+  // ========================= Banner Slider Js End ===================
 
-  // ========================= Arrow Down Scroll Js Start ===================
-  // $(function() {
-  //   $('a[href*=#]').on('click', function(e) {
-  //     e.preventDefault();
-  //     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 100, 'linear');
-  //   });
-  // });
-  // ========================= Arrow Down Scroll Js End ===================
-
-    
-  // ========================= Testimonial Four Slider Js Start ==============
+  
+  // ========================= flash Sale Four Slider Js Start ==============
   $('.flash-sales__slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -217,8 +234,8 @@
     rtl: $('html').attr('dir') === 'rtl' ? true : false,
     speed: 900,
     infinite: true,
-    prevArrow: '<button type="button" class="slick-prev"><i class="ph ph-caret-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="ph ph-caret-right"></i></button>',
+    nextArrow: '#flash-next',
+    prevArrow: '#flash-prev',
     responsive: [
       {
         breakpoint: 991,
@@ -229,59 +246,563 @@
       }
     ]
   });  
-  // ========================= Testimonial Four Slider Js End ===================
+  // ========================= flash Sale Four Slider Js End ==================
+    
+  // ========================= hot deals Slider Js Start ==============
+  $('.hot-deals-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#deals-next',
+    prevArrow: '#deals-prev',
+    responsive: [
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
+    
+    
+  // ========================= hot deals Slider Js Start ==============
+  $('.deals-week-slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#deal-week-next',
+    prevArrow: '#deal-week-prev',
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 5,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
+    
+
+  // ========================= hot deals Slider Js Start ==============
+  $('.top-selling-product-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#top-selling-next',
+    prevArrow: '#top-selling-prev',
+    responsive: [
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
 
   
+  // ========================= hot deals Slider Js Start ==============
+  $('.organic-food__slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#organic-next',
+    prevArrow: '#organic-prev',
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 6,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 424,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
 
   
+  // ========================= New arrival Slider Js Start ==============
+  $('.new-arrival__slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#new-arrival-next',
+    prevArrow: '#new-arrival-prev',
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 6,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 424,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= New arrival Slider Js End ===================
 
-  // ========================= Wow Js Start ===================
-  // new WOW().init();
-  // ========================= Wow Js End ===================
   
-   // ========================= Counter Up Js End ===================
-  //  const counterUp = window.counterUp.default;
-
-  //  const callback = (entries) => {
-  //    entries.forEach((entry) => {
-  //      const el = entry.target;
-  //      if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-  //        counterUp(el, {
-  //          duration: 2000,
-  //          delay: 16,
-  //        });
-  //        el.classList.add('is-visible');
-  //      }
-  //    });
-  //  };
- 
-  //  const IO = new IntersectionObserver(callback, { threshold: 1 });
- 
-  //  // Counter
-  //  const counter = document.querySelector('.counter');
-  //  if (counter) {
-  //    IO.observe(counter);
-  //  }
-   // ========================= Counter Up Js End ===================
+  // ========================= hot deals Slider Js Start ==============
+  $('.short-product-list').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    prevArrow: '<button type="button" class="slick-prev border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute "><i class="ph ph-caret-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute "><i class="ph ph-caret-right"></i></button>',
+  });  
   
-  // ========================== Add Attribute For Bg Image Js Start ====================
-    // $(".background-img").css('background', function () {
-    //   var bg = ('url(' + $(this).data("background-image") + ')');
-    //   return bg;
-    // });
-  // ========================== Add Attribute For Bg Image Js End =====================
+// ========================= hot deals Slider Js End ===================
 
-  // ========================== Password Show Hide Js Start =====================
-  // $(".toggle-password").on('click', function() {
-  //   $(this).toggleClass(" la-eye-slash");
-  //   var input = $($(this).attr("id"));
-  //   if (input.attr("type") == "password") {
-  //   input.attr("type", "text");
-  //   } else {
-  //   input.attr("type", "password");
-  //   }
-  // });
-  // ========================== Password Show Hide Js End =====================
+  
+  // ========================= hot deals Slider Js Start ==============
+  $('.brand-slider').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#brand-next',
+    prevArrow: '#brand-prev',
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 7,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 6,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 424,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 359,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
+
+  
+  // ========================= Category Dropdown Two Js Start ===============================
+  $('.category-two .category__button').on('click', function () {
+    $('.category-two .category__button').toggleClass('active')
+    $('.responsive-dropdown.style-two').addClass('active').slideToggle(400); 
+  }); 
+  // ========================= Category Dropdown Two Js End ===============================
+  
+  
+  // ========================= Featured Products Slider Js Start ==============
+  $('.featured-product-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#featured-products-next',
+    prevArrow: '#featured-products-prev',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      }
+    ]
+  });  
+  // ========================= Featured Products Slider Js End ==================
+
+  
+  // ========================= hot deals Slider Js Start ==============
+  $('.recommended-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#recommended-next',
+    prevArrow: '#recommended-prev',
+    responsive: [
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
+  
+  // ========================= hot deals Slider Js Start ==============
+  $('.vendor-card__list.style-two').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#vendor-next',
+    prevArrow: '#vendor-prev',
+  });  
+  // ========================= hot deals Slider Js End ===================
+  
+  
+  
+  // ========================= hot deals Slider Js Start ==============
+  $('.top-brand__slider').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#topBrand-next',
+    prevArrow: '#topBrand-prev',
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 7,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 6,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 424,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 359,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
+
+  
+  // ========================= Product Details Thumbs Slider Js Start ===================
+  $('.product-details__thumb-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.product-details__images-slider'
+  });
+
+  $('.product-details__images-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.product-details__thumb-slider',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true
+  });
+  // ========================= Product Details Thumbs Slider Js End ===================
+
+  
+  // ========================= Increment & Decrement Js Start ===================
+  var minus = $('.quantity__minus');
+  var input = $('.quantity__input');
+  var plus = $('.quantity__plus');
+
+  $(plus).on('click', function () {
+    var value = input.val(); 
+    value++;
+    input.val(value); 
+  }); 
+
+  $(minus).on('click', function () {
+    var value = input.val(); 
+    if(value > 1) {
+      value--;
+    }
+    input.val(value); 
+  }); 
+  // ========================= Increment & Decrement Js End ===================
+
+  
+  // ========================= Color List Js Start ===================
+  $('.color-list__button').on('click', function () {
+    $('.color-list__button').removeClass('border-gray-900'); 
+
+    if(!$(this).hasClass('border-gray-900')) {
+      $(this).addClass('border-gray-900');
+      $(this).removeClass('border-gray-50');
+    } else {
+      $(this).removeClass('border-gray-900');
+      $(this).addClass('border-gray-50');
+    };
+  }); 
+  // ========================= Color List Js End ===================
+
+  
 
   });
   // ==========================================

@@ -1,19 +1,25 @@
 /* =========================== header Middle Css Start =============================== */
 .header-middle {
     padding: 30px 0;
+    &.style-two {
+        padding: 24px 0;
+    }
     @include xl-screen {
         padding: 24px 0;
     }
     @include lg-screen {
-        padding: 16px 0;
+        padding: 16px 0 !important;
     }
     @include md-screen {
-        padding: 8px 0;
+        padding: 8px 0 !important;
     }
 
     .location-box {
         @include lg-screen {
             padding: 6px 8px !important;
+        }
+        @include sm-screen {
+            padding-left: 14px !important;
         }
     }
 }
@@ -50,6 +56,46 @@
         }
     }
 }
+
+/* Header Activities Css Start */
+.header-two-activities {
+    @include xl-screen {
+        gap: 24px !important;
+    }
+    @include md-screen {
+        gap: 16px !important;
+    }
+    @include sm-screen {
+        gap: 10px !important;
+    }
+
+    @include md-screen {
+        .item-hover-two {
+            > span {
+                font-size: 18px !important;
+                color: var(--neutral-600) !important;
+            }
+        }
+    }
+}
+/* Header Activities Css End */
+
+
+/* Header Activities Css start */
+.search-category {
+    &.style-two {
+        background-color: hsl(var(--white));
+        border-radius: 8px;
+        overflow: hidden;
+        .select2-container--default .select2-selection--single {
+            border-radius: 0;
+            border-left: 0 !important;
+            border-top: 0 !important;
+            border-bottom: 0 !important;
+        }
+    }
+}
+/* Header Activities Css End */
 
 
 /* Category Dropdown Responsive Css Start */

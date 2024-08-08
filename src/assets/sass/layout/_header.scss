@@ -7,7 +7,7 @@
         inset-block-start: 0;
         inset-inline-end: 0;
         width: 100%;
-        z-index: 9;
+        z-index: 8;
         backdrop-filter: blur(24px);
         animation: slideDown 0.35s ease-out;    
         box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
@@ -248,8 +248,11 @@
 .category {
     .category__button {
         @include sm-screen {
-            padding: 8px 3px !important;
+            padding: 12px 3px !important;
             font-size: 12px !important;
+        }
+        @include msm-screen {
+            padding-left: 10px !important;
         }
     }
     @media (min-width: 992px) {
@@ -264,5 +267,42 @@
         }
     }
 }
+
+/* Style Two */
+.category-two {
+    position: relative;
+    @media (min-width: 992px) {
+        width: 265px;
+    }
+    .category__button {
+        width: 100%;
+        @include msm-screen {
+            font-size: 12px;
+            padding: 8px 4px !important;
+        }
+        &.active .arrow-icon i::before {
+            content: "\E13A";
+        }
+    }
+}
+.responsive-dropdown.style-two {
+    width: 100%;
+    border-radius: 0 0 16px 16px;  
+    width: 265px;
+    max-height: 900px;
+    .responsive-dropdown__list {
+        max-height: 900px;
+        @include lg-screen {
+            max-height: 438px;
+        }
+    }
+    @media (min-width: 992px) {
+        z-index: 1;
+    }
+}
+
 /* Category Submenus Submenu Css End */
+
+
+
 /* ================================= Header Css End =========================== */

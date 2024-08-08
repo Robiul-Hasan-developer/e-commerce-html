@@ -9,6 +9,12 @@
   &-300 {
     width: 300px !important;
   }
+  &-265 {
+    width: 265px !important;
+  }
+  &-unset {
+    width: unset !important;
+  }
 }
 
 @each $property, $value in $spaces {
@@ -16,10 +22,16 @@
       height: $value !important;
     }
 }
+.h-unset {
+  height: unset !important;
+}
 
 .max-h {
   &-unset {
     max-height: unset !important;
+  }
+  &-120 {
+    max-height: 120px !important;
   }
   &-200 {
     max-height: 200px !important;
@@ -32,8 +44,16 @@
   }
 }
 
-.max-w-unset {
+.max-w {
+  &-unset {
     max-width: unset !important;
+  }
+  &-120 {
+    max-width: 120px;
+  }
+  &-275 {
+    max-width: 275px;
+  }
 }
 
 
