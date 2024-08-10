@@ -6,21 +6,10 @@
 }
 .table {
     color: hsl(var(--white));
-    
     margin-block-end: 0;
     min-width: max-content;
     &>:not(caption)>*>* {
         border-bottom: 0;
-    }
-    &.style-two {
-        color: hsl(var(--heading-color));
-        thead tr, tbody tr {
-            border-bottom: 1px solid hsl(var(--black)/.1);
-        }
-        thead tr th {
-            padding-block-end: 16px;
-            font-size: 15px;
-        }
     }
     tr {
         th {
@@ -69,6 +58,36 @@
                 font-size: clampCal(14, 16);
                 font-weight: 400;
                 padding: clampCal(16, 30) 0;
+            }
+        }
+    }
+
+    &.style-two {
+        color: hsl(var(--heading-color));
+        thead tr, tbody tr {
+            border-bottom: 1px solid hsl(var(--black)/.1);
+        }
+        thead tr th {
+            padding-block-end: 16px;
+            font-size: 15px;
+        }
+    }
+    &.style-three {
+        tbody tr {
+            border-bottom: 1px solid var(--gray-100);
+            &:last-child {
+                border: 0;
+            }
+            td {
+                &:first-child {
+                    padding-inline-start: 0;
+                }
+                &:last-child {
+                    padding-inline-end: 0;
+                }
+            }
+            td {
+                padding: clampCal(24, 40) 24px;
             }
         }
     }

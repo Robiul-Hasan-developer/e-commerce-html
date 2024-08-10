@@ -308,14 +308,91 @@ input[type=number]{
         color: hsl(var(--heading-color)); 
         font-family: var(--poppins-font)
     }
-    label {
-        @include xsm-screen {
-             
+}
+
+.checked {
+    &-black {
+        .form-check-input {
+            border: 1px solid hsl(var(--black));   
+            &::after {
+                background-color: hsl(var(--black));
+            }
+            &:checked {
+                background-color: hsl(var(--black)) !important;
+                border-color: hsl(var(--black)) !important;
+            }
         }
     }
-    a {
-        @include xsm-screen {
-             
+    &-primary {
+        .form-check-input {
+            border: 1px solid var(--primary-600);   
+            &::after {
+                background-color: var(--primary-600);
+            }
+            &:checked {
+                background-color: var(--primary-600) !important;
+                border-color: var(--primary-600) !important;
+            }
+        }
+    }
+    &-gray {
+        .form-check-input {
+            border: 1px solid var(--gray-600);   
+            &::after {
+                background-color: var(--gray-600);
+            }
+            &:checked {
+                background-color: var(--gray-600) !important;
+                border-color: var(--gray-600) !important;
+            }
+        }
+    }
+    &-success {
+        .form-check-input {
+            border: 1px solid var(--success-600);   
+            &::after {
+                background-color: var(--success-600);
+            }
+            &:checked {
+                background-color: var(--success-600) !important;
+                border-color: var(--success-600) !important;
+            }
+        }
+    }
+    &-danger {
+        .form-check-input {
+            border: 1px solid var(--danger-600);   
+            &::after {
+                background-color: var(--danger-600);
+            }
+            &:checked {
+                background-color: var(--danger-600) !important;
+                border-color: var(--danger-600) !important;
+            }
+        }
+    }
+    &-purple {
+        .form-check-input {
+            border: 1px solid var(--tertiary-600);   
+            &::after {
+                background-color: var(--tertiary-600);
+            }
+            &:checked {
+                background-color: var(--tertiary-600) !important;
+                border-color: var(--tertiary-600) !important;
+            }
+        }
+    }
+    &-white {
+        .form-check-input {
+            border: 1px solid var(--gray-100);   
+            &::after {
+                background-color: var(--gray-100);
+            }
+            &:checked {
+                background-color: var(--gray-100) !important;
+                border-color: var(--gray-100) !important;
+            }
         }
     }
 }

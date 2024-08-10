@@ -1,0 +1,29 @@
+@@include('../partials/_template-top.html', {
+    'htmlClass': 'color-two',
+})
+
+    @@include('../partials/_header-middle-two.html')
+
+    @@include('../partials/_header-two.html', {
+        'categoryStable': 'd-none',
+        'categoryHover': 'd-block',
+    })
+
+    @@include('../partials/_breadcrumb-two.html', {
+        'pageText': "Product Cart"
+    })
+
+    @@include('../partials/_cart.html')
+
+    @@include('../partials/_shipping.html', {
+        'section-margin': 'mb-24',
+        'itemClass': 'bg-main-50',
+        'iconClass': 'bg-main-600',
+    })
+    
+    @@include('../partials/_footer-two.html')
+
+    @@include('../partials/_template-bottom.html')
+
+    </body>
+</html>

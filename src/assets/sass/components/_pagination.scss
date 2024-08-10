@@ -1,9 +1,6 @@
 /* ================================= Pagination Css Start =========================== */
-.common-pagination {
-    flex-wrap: wrap;
-    justify-content: center;
+.pagination {
     margin-block-start: 64px;
-    gap: 8px;
     @include lg-screen {
         margin-block-start: 48px;
     }
@@ -14,29 +11,20 @@
         margin-block-start: 32px;
     }
     .page-item {
+        &.active {
+            .page-link {
+                background-color: var(--main-600) !important;
+                border-color: var(--main-600) !important;
+                color: hsl(var(--white)) !important;
+            }
+        }
         .page-link {
-            border-radius: 8px;
-            width: 42px;
-            height: 43px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: transparent ;
-            font-weight: 600;
-            padding: 0;
-            color: hsl(var(--heading-color));
-            border: 1px solid hsl(var(--black)/.3); 
-             
-            @include md-screen {
-                width: 48px;
-                height: 48px;
-            }
-            &:hover, &:focus, &:focus-visible {
-                color: hsl(var(--white));
-                background-color: hsl(var(--black));
-            }
-            &:focus {
-                box-shadow: none;
+            box-shadow: none !important;   
+            &:hover, &:active, &:focus {
+                color: var(--main-600) !important;
+                background-color: var(--main-100) !important;
+                border-color: var(--main-300) !important;
+                
             }
         }
     }

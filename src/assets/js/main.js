@@ -682,7 +682,6 @@
   // ========================= hot deals Slider Js End ===================
   
   
-  
   // ========================= hot deals Slider Js Start ==============
   $('.top-brand__slider').slick({
     slidesToShow: 8,
@@ -801,6 +800,62 @@
     };
   }); 
   // ========================= Color List Js End ===================
+
+  // ========================== Range Slider Js Start =====================
+  $(function() {
+    $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 25,
+        values: [ 0, 25 ],
+        slide: function( event, ui ) {
+            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
+  // ========================== Range Slider Js End =====================
+
+  
+  // ========================== List Grid Js Start ================================
+  $('.list-btn').on('click', function () {
+    $('.grid-btn').addClass('border-gray-100'); 
+    $('.grid-btn').removeClass('border-main-600 text-white bg-main-600'); 
+    $('.list-grid-wrapper').removeClass('list-view'); 
+    
+    $(this).removeClass('border-gray-100'); 
+    $(this).addClass('border-main-600 text-white bg-main-600'); 
+    $('.list-grid-wrapper').addClass('list-view'); 
+  }); 
+
+
+  $('.grid-btn').on('click', function () {
+    $('.list-btn').addClass('border-gray-100'); 
+    $('.list-btn').removeClass('border-main-600 text-white bg-main-600'); 
+    $('.list-grid-wrapper').removeClass('list-view'); 
+
+    $(this).removeClass('border-gray-100'); 
+    $(this).addClass('border-main-600 text-white bg-main-600'); 
+  }); 
+  // ========================== List Grid Js End ================================
+
+  
+  // ========================== Shop Sidebar Js Start ================================
+  $('.sidebar-btn').on('click', function () {
+    $(this).addClass('bg-main-600 text-white');
+    $('.shop-sidebar').addClass('active');
+    $('.side-overlay').addClass('show');
+    $('body').addClass('scroll-hide-sm'); 
+  }); 
+
+  $('.side-overlay, .shop-sidebar__close').on('click', function () {
+    $('.sidebar-btn').removeClass('bg-main-600 text-white');
+    $('.shop-sidebar').removeClass('active');
+    $('.side-overlay').removeClass('show');
+    $('body').removeClass('scroll-hide-sm');
+  }); 
+  // ========================== Shop Sidebar Js End ================================
 
   
 
