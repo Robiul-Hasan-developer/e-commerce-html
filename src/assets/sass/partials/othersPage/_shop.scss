@@ -1,11 +1,13 @@
 /* ================================ Shop Page css Start =============================== */
+.list-grid-btns {
+    @media (max-width: 479px) {
+        display: none;
+    }
+}
 .list-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 24px;
-    &.list-view {
-
-    }
 }
 
 @media (min-width: 480px) {

@@ -332,7 +332,7 @@
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           arrows: false,
         }
       },
@@ -375,7 +375,7 @@
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           arrows: false,
         }
       },
@@ -768,16 +768,17 @@
   
   // ========================= Increment & Decrement Js Start ===================
   var minus = $('.quantity__minus');
-  var input = $('.quantity__input');
   var plus = $('.quantity__plus');
 
   $(plus).on('click', function () {
+    var input = $(this).siblings('.quantity__input');
     var value = input.val(); 
     value++;
     input.val(value); 
   }); 
 
   $(minus).on('click', function () {
+    var input = $(this).siblings('.quantity__input');
     var value = input.val(); 
     if(value > 1) {
       value--;
@@ -829,7 +830,6 @@
     $('.list-grid-wrapper').addClass('list-view'); 
   }); 
 
-
   $('.grid-btn').on('click', function () {
     $('.list-btn').addClass('border-gray-100'); 
     $('.list-btn').removeClass('border-main-600 text-white bg-main-600'); 
@@ -857,6 +857,35 @@
   }); 
   // ========================== Shop Sidebar Js End ================================
 
+  
+  // ========================== Remove Tr Js Start ================================
+  $('.remove-tr-btn').on('click', function () {
+    $(this).closest('tr').addClass('d-none')
+  }); 
+  // ========================== Remove Tr Js End ================================
+
+  
+  // ========================== Checkout Payment Method Js Start ================================
+  $('.payment-item .form-check-input:checked').closest('.payment-item').find('.payment-item__content').show();
+
+  $('.payment-item .form-check-input').on('change', function () {
+      $('.payment-item__content').hide();
+      $(this).closest('.payment-item').find('.payment-item__content').show();
+  });
+  // ========================== Checkout Payment Method Js End ================================
+
+  
+  // ================== Password Show Hide Js Start ==========
+  $(".toggle-password").on('click', function() {
+    $(this).toggleClass("active");
+    var input = $($(this).attr("id"));
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
+    }
+  });
+  // ========================= Password Show Hide Js End ===========================
   
 
   });

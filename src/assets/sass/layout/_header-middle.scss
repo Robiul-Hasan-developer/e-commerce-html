@@ -44,6 +44,7 @@
         }
     }
     &__input {
+        border-color: var(--gray-200) !important;
         width: 520px;
         @include xxl-screen {
             width: 400px;

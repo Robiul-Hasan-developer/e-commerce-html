@@ -466,7 +466,7 @@
     width: 100%;
     padding: 17px 24px;
     background-color: transparent !important;
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--gray-100);
     color: hsl(var(--black));
     line-height: 1;
 }
@@ -762,7 +762,7 @@ input[type=number] {
 
 .common-check .form-check-input::before {
     position: absolute;
-    content: "\f00c";
+    content: "\e182";
     font-family: "Phosphor";
     font-weight: 900;
     color: hsl(var(--white));
@@ -908,6 +908,10 @@ input[type=number] {
 }
 
 /* Custom Checkbox & Radio Css End */
+.toggle-password.active::before {
+    content: "\e220" !important;
+}
+
 /* ================================= Form Css End =========================== */
 /* ================================= Pagination Css Start =========================== */
 .pagination {
@@ -8270,6 +8274,7 @@ input:focus-visible {
 }
 
 .search-form__input {
+    border-color: var(--gray-200) !important;
     width: 520px;
 }
 
@@ -9180,6 +9185,11 @@ input:focus-visible {
     padding: 32px clamp(1.5rem, -8.492rem + 13.333vw, 4rem);
 }
 
+@media screen and (max-width: 991px) {
+    .newsletter-two__form {
+        width: 100% !important;
+    }
+}
 /* ======================= Newsletter Css End =========================== */
 /* Home Two Css Start */
 .color-two:root {
@@ -9343,6 +9353,12 @@ input:focus-visible {
 
 /* ============================ Product Details Css End ============================= */
 /* ================================ Shop Page css Start =============================== */
+@media (max-width: 479px) {
+    .list-grid-btns {
+        display: none;
+    }
+}
+
 .list-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -9417,4 +9433,31 @@ input:focus-visible {
 }
 
 /* ========================== Cart Page Css End ============================ */
+/* ======================= Checkout Css Start ============================= */
+.payment-item__content {
+    display: none;
+}
+
+.payment-item__content::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 14px;
+    background-color: var(--main-50);
+    left: 32px;
+    bottom: calc(100% - 1px);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* ======================= Checkout Css End ============================= */
+/* ========================= Blog Css Start ============================= */
+.blog-item {
+    margin-bottom: 48px;
+}
+
+.blog-item:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================= Blog Css End ============================= */
 /*# sourceMappingURL=main.css.map */
