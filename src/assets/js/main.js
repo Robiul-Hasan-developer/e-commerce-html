@@ -191,6 +191,76 @@
   });  
   // ========================= Banner Slider Js End ===================
 
+
+   // ========================= hot deals Slider Js Start ==============
+   $('.feature-item-wrapper').slick({
+    slidesToShow: 10,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#feature-item-wrapper-next',
+    prevArrow: '#feature-item-wrapper-prev',
+    responsive: [
+      {
+        breakpoint: 1699,
+        settings: {
+          slidesToShow: 9,
+        }
+      },
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 8,
+        }
+      },
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 6,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 424,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 359,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
+
   
   // ========================= Banner Slider Js Start ==============
   $('.banner-item-two__slider').slick({
@@ -282,7 +352,7 @@
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           arrows: false,
         }
       },
@@ -445,7 +515,7 @@
   $('.new-arrival__slider').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     speed: 1500,
     dots: false,
@@ -512,8 +582,8 @@
     rtl: $('html').attr('dir') === 'rtl' ? true : false,
     speed: 900,
     infinite: true,
-    prevArrow: '<button type="button" class="slick-prev border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute "><i class="ph ph-caret-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute "><i class="ph ph-caret-right"></i></button>',
+    prevArrow: '<button type="button" class="slick-prev border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute hover-bg-main-600 hover-text-white hover-border-main-600 transition-1"><i class="ph ph-caret-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute hover-bg-main-600 hover-text-white hover-border-main-600 transition-1"><i class="ph ph-caret-right"></i></button>',
   });  
   
 // ========================= hot deals Slider Js End ===================
@@ -654,7 +724,7 @@
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           arrows: false,
         }
       },

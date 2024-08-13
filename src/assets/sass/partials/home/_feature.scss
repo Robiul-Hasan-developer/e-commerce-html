@@ -1,6 +1,25 @@
 /* ============================ Feature Section Css start =============================== */
 .feature {
     margin-top: 32px;
+    .arrow-center {
+        &:hover {
+            .slick-arrow {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .slick-arrow {
+            transform: translateY(0);
+            margin-left: -28px;
+            border: 1px solid var(--gray-100);
+            visibility: hidden;
+            opacity: 0;
+            top: 54px;
+            &.slick-next {
+                margin-right: -20px;
+            }
+        }
+    }
 }
 
 .feature-item {

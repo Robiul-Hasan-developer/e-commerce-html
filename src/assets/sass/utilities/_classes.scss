@@ -58,19 +58,25 @@
 
 .inset {
     &-inline-start-0 {
-        inset-inline-start: 0;
+        inset-inline-start: 0 !important;
     }
     &-inline-start-100 {
-        inset-inline-start: 100%;
+        inset-inline-start: 100% !important;
+    }
+    &-inline-start-auto {
+        inset-inline-start: auto !important;
     }
     &-inline-end-0 {
-        inset-inline-end: 0;
+        inset-inline-end: 0 !important;
+    }
+    &-inline-end-auto {
+        inset-inline-end: auto !important;
     }
     &-block-start-0 {
-        inset-block-start: 0;
+        inset-block-start: 0 !important;
     }
     &-block-end-0 {
-        inset-block-end: 0;
+        inset-block-end: 0 !important;
     }
 }
 

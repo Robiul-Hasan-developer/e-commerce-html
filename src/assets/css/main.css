@@ -1446,8 +1446,8 @@ input[type=number] {
 
 .countdown-list.style-three .countdown-list__item {
     background-color: var(--main-50);
-    font-size: 12px !important;
-    padding: 6px 4px;
+    font-size: 11px !important;
+    padding: 6px;
     color: #1A1A1A !important;
 }
 
@@ -4140,23 +4140,31 @@ input:focus-visible {
 }
 
 .inset-inline-start-0 {
-    inset-inline-start: 0;
+    inset-inline-start: 0 !important;
 }
 
 .inset-inline-start-100 {
-    inset-inline-start: 100%;
+    inset-inline-start: 100% !important;
+}
+
+.inset-inline-start-auto {
+    inset-inline-start: auto !important;
 }
 
 .inset-inline-end-0 {
-    inset-inline-end: 0;
+    inset-inline-end: 0 !important;
+}
+
+.inset-inline-end-auto {
+    inset-inline-end: auto !important;
 }
 
 .inset-block-start-0 {
-    inset-block-start: 0;
+    inset-block-start: 0 !important;
 }
 
 .inset-block-end-0 {
-    inset-block-end: 0;
+    inset-block-end: 0 !important;
 }
 
 .start-auto {
@@ -8682,8 +8690,8 @@ input:focus-visible {
     background-color: hsl(var(--white)/0.3);
     color: hsl(var(--white));
     margin: 0 3px;
-    width: 32px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     border-radius: 1px;
     border-radius: 50px;
     text-indent: -9999px;
@@ -8691,6 +8699,7 @@ input:focus-visible {
 }
 
 .slick-dots li.slick-active button {
+    width: 40px;
     background-color: hsl(var(--main-two));
 }
 
@@ -8863,6 +8872,24 @@ input:focus-visible {
     margin-top: 32px;
 }
 
+.feature .arrow-center:hover .slick-arrow {
+    visibility: visible;
+    opacity: 1;
+}
+
+.feature .arrow-center .slick-arrow {
+    transform: translateY(0);
+    margin-left: -28px;
+    border: 1px solid var(--gray-100);
+    visibility: hidden;
+    opacity: 0;
+    top: 54px;
+}
+
+.feature .arrow-center .slick-arrow.slick-next {
+    margin-right: -20px;
+}
+
 .feature-item-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
@@ -8950,6 +8977,13 @@ input:focus-visible {
 
 /* ========================= flash sales End ================================ */
 /* ============================= Product Card Css Start ========================== */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
 @media screen and (max-width: 1499px) {
     .product-card__cart {
         font-size: 12px;
@@ -8970,6 +9004,10 @@ input:focus-visible {
 .product-card__thumb img {
     max-width: 160px;
     width: 100%;
+}
+
+.product-card.style-two {
+    flex-direction: row;
 }
 
 .product-card.style-two .product-card__thumb {
@@ -9305,6 +9343,13 @@ input:focus-visible {
 }
 
 /* ========================== Top Brand Section End ================================ */
+/* ================================ Featured Products Css Start ============================ */
+@media screen and (max-width: 424px) {
+    .featured-products .product-card {
+        flex-direction: column;
+    }
+}
+/* ================================ Featured Products Css End ============================ */
 /* ============================ Product Details Css Start ============================= */
 .product-details__thumb-slider {
     padding: clamp(3rem, -2.173rem + 10.777vw, 7.25rem);

@@ -1,5 +1,9 @@
 /* ============================= Product Card Css Start ========================== */
 .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
     &__cart {   
         @include xxl-screen {
             font-size: 12px;
@@ -20,6 +24,7 @@
     }
 
     &.style-two {
+        flex-direction: row;
         .product-card {
             &__thumb {
                 width: 260px;

@@ -167,7 +167,7 @@
                             
                             <span class="mt-32 pt-32 text-gray-700 border-top border-gray-100 d-block"></span>
 
-                            <a href="#" class="btn btn-black flex-center gap-8 rounded-8 py-16">
+                            <a href="https://www.whatsapp.com" class="btn btn-black flex-center gap-8 rounded-8 py-16">
                                 <i class="ph ph-whatsapp-logo text-lg"></i>
                                 Request More Information
                             </a>
@@ -184,7 +184,7 @@
                 </div>
             </div>
             <div class="col-xl-3">
-                <div class="product-details__sidebar py-40 px-32 border border-gray-100 rounded-16 overflow-hidden">
+                <div class="product-details__sidebar py-40 px-32 border border-gray-100 rounded-16">
                     <div class="mb-32">
                         <label for="delivery" class="h6 activePage mb-8 text-heading fw-semibold d-block">Delivery</label>
                         <div class="flex-align border border-gray-100 rounded-4 px-16">
@@ -252,7 +252,15 @@
                         <div class="px-32 py-16 rounded-8 border border-gray-100 flex-between gap-8">
                             <a href="#" class="d-flex text-main-600 text-28"><i class="ph-fill ph-chats-teardrop"></i></a>
                             <span class="h-26 border border-gray-100"></span>
-                            <a href="#" class="d-flex text-main-600 text-28"><i class="ph-fill ph-share-network"></i></a>
+
+                            <div class="dropdown on-hover-item">
+                                <button class="d-flex text-main-600 text-28" type="button">
+                                    <i class="ph-fill ph-share-network"></i>
+                                </button>
+                                <div class="on-hover-dropdown common-dropdown border-0 inset-inline-start-auto inset-inline-end-0" >
+                                    @@include('../partials/_social-icon.html')
+                                </div>
+                            </div>
                         </div>
                     </div>
 
