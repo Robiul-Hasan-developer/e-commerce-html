@@ -8475,11 +8475,11 @@ input:focus-visible {
 }
 
 .footer-item-wrapper {
-    gap: clamp(2rem, -0.141rem + 2.857vw, 3.25rem);
+    gap: clamp(2rem, 0.715rem + 1.714vw, 2.75rem);
 }
 
 .footer-item-two-wrapper {
-    gap: clamp(2rem, -5.066rem + 9.429vw, 6.125rem);
+    gap: clamp(2rem, -4.209rem + 8.286vw, 5.625rem);
 }
 
 .footer-item__logo {
@@ -8946,6 +8946,15 @@ input:focus-visible {
     background-color: var(--main-50);
     aspect-ratio: 1;
     margin: 0 auto;
+}
+
+.featured-products .product-card, .popular-products .product-card {
+    flex-direction: row;
+    align-items: unset;
+}
+
+.popular-products .product-card__thumb {
+    width: 120px !important;
 }
 
 /* ============================ Feature Section Css End =============================== */

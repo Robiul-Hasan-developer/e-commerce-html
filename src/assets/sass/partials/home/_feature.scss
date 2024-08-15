@@ -93,4 +93,16 @@
         margin: 0 auto;
     }
 }
+
+.featured-products, .popular-products {
+    .product-card {
+        flex-direction: row;
+        align-items: unset;
+    }
+}
+.popular-products {
+    .product-card__thumb {
+        width: 120px !important;
+    }
+}
 /* ============================ Feature Section Css End =============================== */
