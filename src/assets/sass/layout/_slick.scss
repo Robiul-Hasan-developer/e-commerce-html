@@ -9,6 +9,9 @@
       margin: 0 10px;
       > div {
           height: 100%;
+          > div {
+            height: 100%;
+          }
       }
   }
 }
