@@ -1,4 +1,10 @@
 /* ============================ trending products css Start =========================== */
+.trending-products-three {
+    .product-card__thumb {
+        height: 330px;
+    }
+}
+
 .trending-products {
     &-box {
         background-color: #F3EDDE;
@@ -6,9 +12,14 @@
             max-width: 364px;
             margin: 0 auto;
         }
-        &__content {
-
-        }
     }
+}
+
+.expand-btn {
+    color: var(--neutral-600);
+}
+.expand-icons {
+    display: none;
+    flex-direction: column;
 }
 /* ============================ trending products css End =========================== */

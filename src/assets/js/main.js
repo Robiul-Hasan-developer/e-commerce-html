@@ -190,7 +190,33 @@
     ]
   });  
   // ========================= Banner Slider Js End ===================
-
+  
+  // ========================= Banner Three Slider Js Start ==============
+  $('.banner-three-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#banner-three-next',
+    prevArrow: '#banner-three-prev',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });  
+  // ========================= Banner Three Slider Js End ===================
 
    // ========================= hot deals Slider Js Start ==============
    $('.feature-item-wrapper').slick({
@@ -243,6 +269,69 @@
         breakpoint: 575,
         settings: {
           slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 424,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 359,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });  
+  // ========================= hot deals Slider Js End ===================
+
+   // ========================= hot deals Slider Js Start ==============
+   $('.feature-three-item-wrapper').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#feature-item-wrapper-next',
+    prevArrow: '#feature-item-wrapper-prev',
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
         }
       },
       {
@@ -944,7 +1033,6 @@
   });
   // ========================== Checkout Payment Method Js End ================================
 
-  
   // ================== Password Show Hide Js Start ==========
   $(".toggle-password").on('click', function() {
     $(this).toggleClass("active");
@@ -956,8 +1044,58 @@
     }
   });
   // ========================= Password Show Hide Js End ===========================
-  
 
+  // ========================= Background Image Js Start ===================
+    $(".bg-img").css('background-image', function () {
+      var bg = 'url(' + $(this).data("background-image") + ')';
+      return bg;
+    });
+  // ========================= Background Image Js End ===================
+
+  // ========================== Text Slide Js Start =====================
+    $('.text-slider').marquee({
+      pauseOnHover: true,
+      allowCss3Support: true,
+      css3easing: 'linear',
+      easing: 'linear',
+      delayBeforeStart: 1000,
+      duration: 7000,
+      gap: 20,
+      pauseOnCycle: false,
+      startVisible: false
+    });
+    // ========================== Text Slide Js End =====================
+
+
+    // ========================== Trending Products Js Strt =====================
+    $('.expand-btn').on('click', function () {
+      $(this).toggleClass('bg-main-two-600 text-white');
+      $(this).parent().find('.expand-icons').toggleClass('d-flex');
+
+      if($(this).children('i').hasClass('ph ph-plus')) {
+        $(this).children('i').removeClass('ph ph-plus')
+        $(this).children('i').addClass('ph ph-x')
+      } else {
+        $(this).children('i').removeClass('ph ph-x')
+        $(this).children('i').addClass('ph ph-plus')
+      }
+    });
+
+    $('.wishlist-btn').on('click', function () {
+      if($(this).children('i').hasClass('ph ph-heart')) {
+        $(this).children('i').removeClass('ph ph-heart')
+        $(this).children('i').addClass('ph-fill ph-heart text-main-two-600')
+      } else {
+        $(this).children('i').removeClass('ph-fill ph-heart text-main-two-600')
+        $(this).children('i').addClass('ph ph-heart')
+      }
+    });
+    
+    // $(this).toggleClass('active');
+    // ========================== Trending Products Js End =====================
+    
+    
+  
   });
   // ==========================================
   //      End Document Ready function

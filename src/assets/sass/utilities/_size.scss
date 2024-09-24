@@ -36,6 +36,9 @@
   &-200 {
     max-height: 200px !important;
   }
+  &-260 {
+    max-height: 260px !important;
+  }
   &-300 {
     max-height: 300px !important;
   }
@@ -54,8 +57,17 @@
   &-120 {
     max-width: 120px;
   }
+  &-260 {
+    max-width: 260px !important;
+  }
+  &-375 {
+    max-width: 375px;
+  }
   &-275 {
     max-width: 275px;
+  }
+  &-472 {
+    max-width: 472px;
   }
 }
 

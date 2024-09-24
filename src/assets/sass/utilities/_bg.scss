@@ -30,3 +30,24 @@
 .bg-light-purple {
   background: #ECDBEC !important;
 }
+
+.bg {
+  &-yellow-light {
+    background-color: #FFFCE1 !important;
+  }
+  &-danger-light {
+    background-color: #FFEBEE !important;
+  }
+  &-purple-light {
+    background-color: #F5E7FC !important;
+  }
+  &-danger-light {
+    background-color: #FFE2F5 !important;
+  }
+  &-warning-light {
+    background-color: #FBEEDD !important;
+  }
+  &-success-light {
+    background-color: #F6F5DB !important;
+  }
+}

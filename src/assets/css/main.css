@@ -39,12 +39,13 @@
 /* ======================== Functions Css End ======================= */
 /* ======================== Functions Css End ======================= */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
     --heading-font: "Quicksand", sans-serif;
     --heading-font-two: "Exo", sans-serif;
+    --heading-font-three: "Outfit", sans-serif;
     --body-font: "Inter", sans-serif;
   /* Font Size Variable Start */
     --heading-one: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
@@ -53,6 +54,8 @@
     --heading-four: clamp(1.5rem, 0.5569rem + 1.444vw, 2.5rem);
     --heading-five: clamp(1.25rem, 1.2rem + 0.722vw, 2.25rem);
     --heading-six: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
+    --display-200: clamp(3.75rem, -0.0733rem + 6.3692vw, 12.5rem);
+    --display-one: clamp(2.5rem, -0.0733rem + 6.3692vw, 7.5rem);
   /* Font Size End */
   /* template main color */
     --main-h: 148;
@@ -4135,6 +4138,14 @@ input:focus-visible {
     transition: 0.3s linear;
 }
 
+.display-200 {
+    font-size: var(--display-200);
+}
+
+.display-one {
+    font-size: var(--display-one);
+}
+
 .min-width-max-content {
     min-width: max-content;
 }
@@ -4181,6 +4192,10 @@ input:focus-visible {
 
 .line-height-1 {
     line-height: 1;
+}
+
+.line-height-73 {
+    line-height: 0.73;
 }
 
 /* Text Color */
@@ -4594,6 +4609,10 @@ input:focus-visible {
     max-height: 200px !important;
 }
 
+.max-h-260 {
+    max-height: 260px !important;
+}
+
 .max-h-300 {
     max-height: 300px !important;
 }
@@ -4614,8 +4633,20 @@ input:focus-visible {
     max-width: 120px;
 }
 
+.max-w-260 {
+    max-width: 260px !important;
+}
+
+.max-w-375 {
+    max-width: 375px;
+}
+
 .max-w-275 {
     max-width: 275px;
+}
+
+.max-w-472 {
+    max-width: 472px;
 }
 
 .top-n6 {
@@ -7023,6 +7054,30 @@ input:focus-visible {
     background: #ECDBEC !important;
 }
 
+.bg-yellow-light {
+    background-color: #FFFCE1 !important;
+}
+
+.bg-danger-light {
+    background-color: #FFEBEE !important;
+}
+
+.bg-purple-light {
+    background-color: #F5E7FC !important;
+}
+
+.bg-danger-light {
+    background-color: #FFE2F5 !important;
+}
+
+.bg-warning-light {
+    background-color: #FBEEDD !important;
+}
+
+.bg-success-light {
+    background-color: #F6F5DB !important;
+}
+
 /* Font Size Class Start */
 .text-inherit {
     font-size: inherit;
@@ -8193,6 +8248,10 @@ input:focus-visible {
     }
 }
 /* Category Submenus Submenu Css End */
+.header-border-0 .header {
+    border-bottom: 0 !important;
+}
+
 /* ================================= Header Css End =========================== */
 /* =========================== header Middle Css Start =============================== */
 .header-middle {
@@ -8894,6 +8953,10 @@ input:focus-visible {
     margin-right: -20px;
 }
 
+.feature.feature-three .arrow-center .slick-arrow {
+    top: 110px;
+}
+
 .feature-item-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
@@ -9221,17 +9284,30 @@ input:focus-visible {
     --main-l: 49%;
 }
 
-.color-two h1,
-.color-two h2,
-.color-two h3,
-.color-two h4,
-.color-two h5,
-.color-two h6 {
+.font-exo h1,
+.font-exo h2,
+.font-exo h3,
+.font-exo h4,
+.font-exo h5,
+.font-exo h6 {
     font-family: var(--heading-font-two);
 }
 
-.color-two h1, .color-two .h1, .color-two h2, .color-two .h2, .color-two h3, .color-two .h3, .color-two h4, .color-two .h4, .color-two h5, .color-two .h5, .color-two h6, .color-two .h6 {
+.font-exo h1, .font-exo .h1, .font-exo h2, .font-exo .h2, .font-exo h3, .font-exo .h3, .font-exo h4, .font-exo .h4, .font-exo h5, .font-exo .h5, .font-exo h6, .font-exo .h6 {
     font-family: var(--heading-font-two);
+}
+
+.font-outfit h1,
+.font-outfit h2,
+.font-outfit h3,
+.font-outfit h4,
+.font-outfit h5,
+.font-outfit h6 {
+    font-family: var(--heading-font-three);
+}
+
+.font-outfit h1, .font-outfit .h1, .font-outfit h2, .font-outfit .h2, .font-outfit h3, .font-outfit .h3, .font-outfit h4, .font-outfit .h4, .font-outfit h5, .font-outfit .h5, .font-outfit h6, .font-outfit .h6 {
+    font-family: var(--heading-font-three);
 }
 
 /* Home Two Css End */
@@ -9314,6 +9390,10 @@ input:focus-visible {
 
 /* Week Deals End  */
 /* ============================ trending products css Start =========================== */
+.trending-products-three .product-card__thumb {
+    height: 330px;
+}
+
 .trending-products-box {
     background-color: #F3EDDE;
 }
@@ -9321,6 +9401,15 @@ input:focus-visible {
 .trending-products-box__title {
     max-width: 364px;
     margin: 0 auto;
+}
+
+.expand-btn {
+    color: var(--neutral-600);
+}
+
+.expand-icons {
+    display: none;
+    flex-direction: column;
 }
 
 /* ============================ trending products css End =========================== */
@@ -9363,6 +9452,70 @@ input:focus-visible {
     }
 }
 /* ================================ Featured Products Css End ============================ */
+/* ============================= Banner Three Css Start ================================= */
+.banner-three {
+    background-color: var(--neutral-600);
+    padding: 80px 0;
+}
+
+@media (width: 991px) {
+    .banner-three {
+        padding: 60px 0;
+    }
+}
+
+.animation {
+    position: absolute;
+    max-width: 10%;
+}
+
+.star-shape {
+    bottom: 4%;
+    inset-inline-start: 5%;
+    opacity: 0.3;
+}
+
+.star-shape.style-two {
+    inset-inline-start: auto;
+    bottom: auto;
+    top: 10%;
+    inset-inline-end: 8%;
+}
+
+.line-shape {
+    top: 14%;
+    left: 58%;
+}
+
+.animation-rotate {
+    animation: rotation 6s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* ============================= Banner Three Css End ================================= */
+/* ============================== Promotional Banner Three Start ==========================  */
+.promo-three-item {
+    padding: clamp(2rem, -4.542rem + 13.629vw, 7.375rem) clamp(1.5rem, -1.543rem + 6.339vw, 4rem);
+}
+
+/* ============================== Promotional Banner Three End ==========================  */
+.js-marquee {
+    display: flex;
+    gap: 32px;
+}
+
 /* ============================ Product Details Css Start ============================= */
 .product-details__thumb-slider {
     padding: clamp(3rem, -2.173rem + 10.777vw, 7.25rem);

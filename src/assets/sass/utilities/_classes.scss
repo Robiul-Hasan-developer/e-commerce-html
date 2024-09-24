@@ -52,6 +52,13 @@
     }
 }
 
+.display-200 {
+    font-size: var(--display-200);
+}
+.display-one {
+    font-size: var(--display-one);
+}
+
 .min-width-max-content {
     min-width: max-content;
 }
@@ -98,6 +105,9 @@
     }
     &-1 {
         line-height: 1;
+    }
+    &-73 {
+        line-height: .73;
     }
 }
 
