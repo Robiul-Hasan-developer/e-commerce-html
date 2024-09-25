@@ -94,6 +94,14 @@
         background-color: var(--main-50);
         aspect-ratio: 1;
         margin: 0 auto;
+        img {
+            transition: .2s linear;
+        }
+    }
+    &:hover {
+        .feature-item__thumb img {
+            transform: scale(1.2);
+        }
     }
 }
 

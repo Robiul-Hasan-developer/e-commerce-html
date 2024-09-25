@@ -3987,6 +3987,14 @@ input:focus-visible {
     padding-block-end: var(--size-160) !important;
 }
 
+.p--24 {
+    padding: 24px;
+}
+
+.p-56-px {
+    padding: clamp(0.5rem, -9.243rem + 12vw, 3.5rem);
+}
+
 .pt-0 {
     padding-block-start: 0 !important;
 }
@@ -4641,12 +4649,24 @@ input:focus-visible {
     max-width: 375px;
 }
 
+.max-w-340 {
+    max-width: 340px;
+}
+
 .max-w-275 {
     max-width: 275px;
 }
 
 .max-w-472 {
     max-width: 472px;
+}
+
+.max-w-990 {
+    max-width: 990px;
+}
+
+.min-h-485 {
+    min-height: 485px;
 }
 
 .top-n6 {
@@ -7463,6 +7483,10 @@ input:focus-visible {
     border-radius: 10rem !important;
 }
 
+.rounded-top-right-0 {
+    border-top-right-radius: 0 !important;
+}
+
 /* Hide Scroll bar Css For Custom Modal */
 .scroll-hide {
     position: absolute;
@@ -8689,6 +8713,10 @@ input:focus-visible {
     height: 48px;
 }
 
+.slick-arrow:active {
+    transform: scale(1.02);
+}
+
 @media screen and (max-width: 991px) {
     .slick-arrow {
         width: 40px;
@@ -8776,6 +8804,19 @@ input:focus-visible {
 @media screen and (max-width: 1199px) {
     .section-heading {
         margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-heading.writing-mode {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 1199px) {
+    .section-heading.writing-mode {
+        margin-bottom: 60px !important;
     }
 }
 /* ================== Section Heading Css End ========================= */
@@ -9015,6 +9056,14 @@ input:focus-visible {
     margin: 0 auto;
 }
 
+.feature-item__thumb img {
+    transition: 0.2s linear;
+}
+
+.feature-item:hover .feature-item__thumb img {
+    transform: scale(1.2);
+}
+
 .featured-products .product-card, .popular-products .product-card {
     flex-direction: row;
     align-items: unset;
@@ -9060,6 +9109,10 @@ input:focus-visible {
     align-items: start;
 }
 
+.product-card:hover .product-card__thumb img {
+    transform: scale(1.2);
+}
+
 @media screen and (max-width: 1499px) {
     .product-card__cart {
         font-size: 12px;
@@ -9080,6 +9133,7 @@ input:focus-visible {
 .product-card__thumb img {
     max-width: 160px;
     width: 100%;
+    transition: 0.2s linear;
 }
 
 .product-card.style-two {
@@ -9105,7 +9159,7 @@ input:focus-visible {
 
 @media screen and (max-width: 1199px) {
     .product-card__thumb {
-        height: 160px;
+        min-height: 160px;
     }
 
     .product-card__thumb img {
@@ -9422,6 +9476,10 @@ input:focus-visible {
     max-width: 320px;
 }
 
+.discount-three-item {
+    padding: clamp(2rem, -5.911rem + 16.482vw, 8.5rem) clamp(1.5rem, -0.934rem + 5.071vw, 3.5rem);
+}
+
 /* =============================== Discount css End ============================ */
 /* ====================== Popular Products Start ==================== */
 @media screen and (max-width: 767px) {
@@ -9516,6 +9574,104 @@ input:focus-visible {
     gap: 32px;
 }
 
+/* ============================== Deals Section Css Start ========================== */
+.deals__img {
+    transform: translateY(12px);
+}
+
+@media (min-width: 575px) {
+    .rotate-10 {
+        transform: rotate(-10deg);
+    }
+
+    .positioned {
+        position: absolute;
+        width: 100%;
+        inset-inline-start: 60px;
+        inset-block-start: 60px;
+        z-index: 1;
+    }
+}
+/* ============================== Deals Section Css End ========================== */
+/* ================================= Testimonials Section Css Start ==================================== */
+.testimonials .slick-slider .slick-track {
+    display: flex;
+    align-items: end;
+}
+
+.testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs {
+    min-height: 650px;
+    overflow: unset !important;
+}
+
+@media (max-width: 767px) {
+    .testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 575px) {
+    .testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs {
+        min-height: 200px;
+    }
+}
+
+.testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs img {
+    height: unset;
+    min-height: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+@media (min-width: 768px) {
+    .testimonials-item__desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (min-width: 768px) {
+    .testimonials-slider {
+        position: absolute;
+        top: 0;
+        left: 25.5%;
+    }
+}
+
+@media (max-width: 1299px) {
+    .testimonials-slider {
+        left: 34%;
+    }
+}
+
+.testimonials-thumbs {
+    max-height: 336px;
+    overflow: hidden;
+    transition: 0.2s linear;
+}
+
+.testimonials-thumbs::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(2deg, #000000e8, transparent);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+.testimonials-thumbs:hover::before, .testimonials-thumbs:hover .testimonials-thumbs__content {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* ================================= Testimonials Section Css End ==================================== */
 /* ============================ Product Details Css Start ============================= */
 .product-details__thumb-slider {
     padding: clamp(3rem, -2.173rem + 10.777vw, 7.25rem);

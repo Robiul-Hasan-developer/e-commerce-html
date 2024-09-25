@@ -1090,9 +1090,120 @@
         $(this).children('i').addClass('ph ph-heart')
       }
     });
-    
-    // $(this).toggleClass('active');
     // ========================== Trending Products Js End =====================
+
+    // ========================== Instagram Slider Js Start =====================
+    $('.instagram-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 1500,
+      dots: false,
+      pauseOnHover: true,
+      arrows: true,
+      draggable: true,
+      rtl: $('html').attr('dir') === 'rtl' ? true : false,
+      speed: 900,
+      infinite: true,
+      nextArrow: '#instagram-next',
+      prevArrow: '#instagram-prev',
+      responsive: [
+        {
+          breakpoint: 1299,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 424,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+          }
+        },
+      ]
+    });  
+    // ========================== Instagram Slider Js End =====================
+    
+
+    // ========================== Testimonials Thumbs Slider Js Start =====================
+    $('.testimonials-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.testimonials-thumbs-slider',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true,
+      fade: true,
+      cssEase: 'linear',
+      dots: false,
+      arrows: false,
+    });
+
+    $('.testimonials-thumbs-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 1500,
+      dots: false,
+      pauseOnHover: true,
+      arrows: true,
+      draggable: true,
+      rtl: $('html').attr('dir') === 'rtl' ? true : false,
+      speed: 900,
+      infinite: true,
+      nextArrow: '#testi-next',
+      prevArrow: '#testi-prev',
+      asNavFor: '.testimonials-slider',
+      responsive: [
+        {
+          breakpoint: 1299,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 424,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+          }
+        },
+      ]
+    });  
+    // ========================== Testimonials Thumbs Slider Js End =====================
     
     
   

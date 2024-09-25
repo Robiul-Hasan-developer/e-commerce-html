@@ -63,14 +63,26 @@
   &-375 {
     max-width: 375px;
   }
+  &-340 {
+    max-width: 340px;
+  }
   &-275 {
     max-width: 275px;
   }
   &-472 {
     max-width: 472px;
   }
+  &-990 {
+    max-width: 990px;
+  }
 }
 
+
+.min-h {
+  &-485 {
+    min-height: 485px;
+  }
+}
 
 .top-n6 {
   inset-block-start: -6px;

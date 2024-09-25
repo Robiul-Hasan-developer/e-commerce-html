@@ -1,0 +1,21 @@
+/* ============================== Deals Section Css Start ========================== */
+.deals {
+    &__img {
+        transform: translateY(12px);
+    }
+}
+
+@media (min-width: 575px) {
+    .rotate-10 {
+        transform: rotate(-10deg);
+    }
+    .positioned {
+        position: absolute;
+        width: 100%;
+        inset-inline-start: 60px;
+        inset-block-start: 60px;
+        z-index: 1;
+    }
+}
+
+/* ============================== Deals Section Css End ========================== */

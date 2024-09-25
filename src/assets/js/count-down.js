@@ -57,3 +57,4 @@ initializeCountdown('countdown20', '2025-11-15');
 initializeCountdown('countdown21', '2025-11-15');
 initializeCountdown('countdown22', '2025-11-15');
 initializeCountdown('countdown23', '2025-11-15');
+initializeCountdown('countdown24', '2025-11-15');
