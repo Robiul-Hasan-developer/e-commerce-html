@@ -39,13 +39,14 @@
 /* ======================== Functions Css End ======================= */
 /* ======================== Functions Css End ======================= */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
     --heading-font: "Quicksand", sans-serif;
     --heading-font-two: "Exo", sans-serif;
     --heading-font-three: "Outfit", sans-serif;
+    --heading-font-four: "Dancing Script", cursive;
     --body-font: "Inter", sans-serif;
   /* Font Size Variable Start */
     --heading-one: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
@@ -1472,7 +1473,7 @@ input[type=number] {
     position: absolute;
     inset-block-start: -18px;
     inset-inline-start: 0;
-    animation: notification 1s linear infinite;
+    animation: notification 0.8s infinite;
 }
 
 .badge-notification::before {
@@ -4233,6 +4234,10 @@ input:focus-visible {
     font-family: var(--heading-font-two);
 }
 
+.font-heading-four {
+    font-family: var(--heading-font-four);
+}
+
 .font-body {
     font-family: var(--body-font);
 }
@@ -4256,6 +4261,20 @@ input:focus-visible {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.bg-blur {
+    backdrop-filter: blur(90px);
+    background-color: hsl(var(--white)/0.3) !important;
+    transition: 0.2s linear;
+}
+
+.bg-blur:hover {
+    transform: scale(1.2);
+}
+
+.rotate-10 {
+    transform: rotate(-10deg);
 }
 
 /* ================================= Classes Css End =========================== */
@@ -9594,19 +9613,36 @@ input:focus-visible {
     transform: translateY(12px);
 }
 
-@media (min-width: 575px) {
-    .rotate-10 {
-        transform: rotate(-10deg);
-    }
-
-    .positioned {
-        position: absolute;
-        width: 100%;
-        inset-inline-start: 60px;
-        inset-block-start: 60px;
-        z-index: 1;
-    }
+.products-group__list {
+    position: absolute;
+    left: 35%;
+    bottom: 30%;
+    z-index: 1;
 }
+
+.products-group__list:nth-child(2) {
+    bottom: 48%;
+    left: 65%;
+}
+
+.products-group__list:nth-child(3) {
+    bottom: 56%;
+    left: 80%;
+}
+
+.products-group__list:hover .products-group__card {
+    margin-bottom: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.products-group__card {
+    transform: translateX(-68%) rotate(-10deg);
+    margin-bottom: -32px;
+    visibility: hidden;
+    opacity: 0;
+}
+
 /* ============================== Deals Section Css End ========================== */
 /* ================================= Testimonials Section Css Start ==================================== */
 @media (min-width: 768px) {
@@ -9630,6 +9666,12 @@ input:focus-visible {
 @media (max-width: 1299px) {
     .testimonials-slider {
         left: 34%;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonials-slider {
+        left: 0;
     }
 }
 
@@ -9675,7 +9717,6 @@ input:focus-visible {
 
 .testimonials .slick-slide {
     transition: 0.3s linear;
-    height: 630px !important;
 }
 
 .testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs {
@@ -9687,6 +9728,15 @@ input:focus-visible {
     max-height: 100%;
 }
 
+.testimonials-thumbs-slider .slick-slide {
+    height: 630px !important;
+}
+
+@media (min-width: 768px) {
+    .testimonials-slider .slick-slide {
+        height: 630px !important;
+    }
+}
 /* ================================= Testimonials Section Css End ==================================== */
 /* ============================ Product Details Css Start ============================= */
 .product-details__thumb-slider {
@@ -9728,6 +9778,7 @@ input:focus-visible {
     .list-view .product-card {
         display: flex;
         align-items: center;
+        flex-direction: row;
     }
 
     .list-view .product-card__thumb {

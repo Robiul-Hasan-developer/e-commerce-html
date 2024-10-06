@@ -132,6 +132,9 @@
     &-heading-two {
         font-family: var(--heading-font-two);
     }
+    &-heading-four {
+        font-family: var(--heading-font-four);
+    }
     &-body {
         font-family: var(--body-font);
     }
@@ -154,5 +157,18 @@
 }
 .cursor-pointer {
     cursor: pointer;
+}
+
+
+.bg-blur {
+    backdrop-filter: blur(90px);
+    background-color: hsl(var(--white)/.3) !important;
+    transition: .2s linear;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.rotate-10 {
+    transform: rotate(-10deg);
 }
 /* ================================= Classes Css End =========================== */

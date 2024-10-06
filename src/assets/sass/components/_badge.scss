@@ -3,7 +3,7 @@
     position: absolute;
     inset-block-start: -18px;
     inset-inline-start: 0;
-    animation: notification 1s linear infinite;
+    animation: notification .8s infinite;
     &::before {
         position: absolute;
         content: "";

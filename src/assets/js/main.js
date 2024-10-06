@@ -78,24 +78,32 @@
   // ========================== add active class to ul>li top Active current page Js Start =====================
   function dynamicActiveMenuClass(selector) {
     let FileName = window.location.pathname.split("/").reverse()[0];
-
-    selector.find("li").each(function () {
-      let anchor = $(this).find("a");
-      if ($(anchor).attr("href") == FileName) {
-        $(this).addClass("activePage");
-      }
-    });
-    // if any li has activePage element add class
-    selector.children("li").each(function () {
-      if ($(this).find(".activePage").length) {
-        $(this).addClass("activePage");
-      }
-    });
-    // if no file name return
-    if ("" == FileName) {
-      selector.find("li").eq(0).addClass("activePage");
+  
+    // If we are at the root path ("/" or no file name), keep the activePage class on the Home item
+    if (FileName === "" || FileName === "index.html") {
+      // Keep the activePage class on the Home link
+      selector.find("li.nav-menu__item.has-submenu").eq(0).addClass("activePage");
+    } else {
+      // Remove activePage class from all items first
+      selector.find("li").removeClass("activePage");
+  
+      // Add activePage class to the correct li based on the current URL
+      selector.find("li").each(function () {
+        let anchor = $(this).find("a");
+        if ($(anchor).attr("href") == FileName) {
+          $(this).addClass("activePage");
+        }
+      });
+  
+      // If any li has activePage element, add class to its parent li
+      selector.children("li").each(function () {
+        if ($(this).find(".activePage").length) {
+          $(this).addClass("activePage");
+        }
+      });
     }
   }
+  
   if ($('ul').length) {
     dynamicActiveMenuClass($('ul'));
   }
@@ -1228,7 +1236,7 @@
     easing: 'ease',
   });
   // ========================= AOS Animation Js End ===================
-    
+
   
   });
   // ==========================================
