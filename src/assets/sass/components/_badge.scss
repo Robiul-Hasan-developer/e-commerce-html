@@ -3,6 +3,7 @@
     position: absolute;
     inset-block-start: -18px;
     inset-inline-start: 0;
+    animation: notification 1s linear infinite;
     &::before {
         position: absolute;
         content: "";
@@ -24,4 +25,14 @@
     inset-inline-start: -4px;
     transform: translateY(-50%) rotate(45deg);
     top: 50%;
+}
+
+
+@keyframes notification {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .3;
+    }
 }

@@ -1472,6 +1472,7 @@ input[type=number] {
     position: absolute;
     inset-block-start: -18px;
     inset-inline-start: 0;
+    animation: notification 1s linear infinite;
 }
 
 .badge-notification::before {
@@ -1496,6 +1497,15 @@ input[type=number] {
     top: 50%;
 }
 
+@keyframes notification {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
 /* ================================= Range Slider Css Start =========================== */
 .custom--range #slider-range {
     height: 4px;
@@ -8979,11 +8989,16 @@ input:focus-visible {
 .feature .arrow-center:hover .slick-arrow {
     visibility: visible;
     opacity: 1;
+    margin-left: -28px;
+}
+
+.feature .arrow-center:hover .slick-arrow.slick-next {
+    margin-right: -20px;
 }
 
 .feature .arrow-center .slick-arrow {
     transform: translateY(0);
-    margin-left: -28px;
+    margin-left: -40px;
     border: 1px solid var(--gray-100);
     visibility: hidden;
     opacity: 0;
@@ -8991,7 +9006,7 @@ input:focus-visible {
 }
 
 .feature .arrow-center .slick-arrow.slick-next {
-    margin-right: -20px;
+    margin-right: -30px;
 }
 
 .feature.feature-three .arrow-center .slick-arrow {
@@ -9594,35 +9609,6 @@ input:focus-visible {
 }
 /* ============================== Deals Section Css End ========================== */
 /* ================================= Testimonials Section Css Start ==================================== */
-.testimonials .slick-slider .slick-track {
-    display: flex;
-    align-items: end;
-}
-
-.testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs {
-    min-height: 650px;
-    overflow: unset !important;
-}
-
-@media (max-width: 767px) {
-    .testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs {
-        min-height: 320px;
-    }
-}
-
-@media (max-width: 575px) {
-    .testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs {
-        min-height: 200px;
-    }
-}
-
-.testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs img {
-    height: unset;
-    min-height: 100%;
-    object-fit: cover;
-    max-height: 100%;
-}
-
 @media (min-width: 768px) {
     .testimonials-item__desc {
         display: -webkit-box;
@@ -9648,12 +9634,23 @@ input:focus-visible {
 }
 
 .testimonials-thumbs {
-    max-height: 336px;
     overflow: hidden;
     transition: 0.2s linear;
 }
 
-.testimonials-thumbs::before {
+.testimonials-thumbs__img {
+    max-height: 350px;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s linear;
+    position: relative;
+}
+
+.testimonials-thumbs__img img {
+    object-position: top;
+}
+
+.testimonials-thumbs__img::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -9666,9 +9663,28 @@ input:focus-visible {
     transition: 0.2s linear;
 }
 
-.testimonials-thumbs:hover::before, .testimonials-thumbs:hover .testimonials-thumbs__content {
+.testimonials-thumbs:hover .testimonials-thumbs__img::before, .testimonials-thumbs:hover .testimonials-thumbs__content {
     visibility: visible !important;
     opacity: 1 !important;
+}
+
+.testimonials .slick-slider .slick-track {
+    display: flex;
+    align-items: end;
+}
+
+.testimonials .slick-slide {
+    transition: 0.3s linear;
+    height: 630px !important;
+}
+
+.testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs {
+    overflow: unset !important;
+}
+
+.testimonials .slick-slide.slick-active.slick-current .testimonials-thumbs__img {
+    object-fit: cover;
+    max-height: 100%;
 }
 
 /* ================================= Testimonials Section Css End ==================================== */

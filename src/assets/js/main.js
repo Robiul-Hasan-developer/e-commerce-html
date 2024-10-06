@@ -180,15 +180,17 @@
     infinite: true,
     nextArrow: '#banner-next',
     prevArrow: '#banner-prev',
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
   });  
+
+  $('.banner-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    $('.wow').css('visibility', 'hidden').removeClass('animated'); 
+  });
+
+  $('.banner-slider').on('afterChange', function(event, slick, currentSlide) {
+    new WOW().init();
+    $('.wow').css('visibility', 'visible'); 
+  });
+
   // ========================= Banner Slider Js End ===================
   
   // ========================= Banner Three Slider Js Start ==============
@@ -207,15 +209,16 @@
     infinite: true,
     nextArrow: '#banner-three-next',
     prevArrow: '#banner-three-prev',
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
   });  
+  
+  $('.banner-three-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    $('.wow').css('visibility', 'hidden').removeClass('animated'); 
+  });
+
+  $('.banner-three-slider').on('afterChange', function(event, slick, currentSlide) {
+    new WOW().init();
+    $('.wow').css('visibility', 'visible'); 
+  });
   // ========================= Banner Three Slider Js End ===================
 
    // ========================= hot deals Slider Js Start ==============
@@ -376,6 +379,14 @@
       }
     ]
   });  
+  $('.banner-item-two__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    $('.wow').css('visibility', 'hidden').removeClass('animated'); 
+  });
+
+  $('.banner-item-two__slider').on('afterChange', function(event, slick, currentSlide) {
+    new WOW().init();
+    $('.wow').css('visibility', 'visible'); 
+  });
   // ========================= Banner Slider Js End ===================
 
   
@@ -1205,6 +1216,18 @@
     });  
     // ========================== Testimonials Thumbs Slider Js End =====================
     
+  // ========================= Wow Js Start ===================
+  new WOW().init();
+  // ========================= Wow Js End ===================
+
+  // ========================= AOS Animation Js Start ===================
+  AOS.init({
+    offset: 40,
+    duration: 1000,
+    // once: true,
+    easing: 'ease',
+  });
+  // ========================= AOS Animation Js End ===================
     
   
   });
