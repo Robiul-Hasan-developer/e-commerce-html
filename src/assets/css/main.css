@@ -121,6 +121,7 @@
     --size-120: 7.5rem;
     --size-144: 9rem;
     --size-160: 10rem;
+    --size-210: 13.125rem;
     --main-50: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9));
     --main-100: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8));
     --main-200: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7));
@@ -1855,6 +1856,10 @@ input:focus-visible {
     margin: var(--size-160) !important;
 }
 
+.m-210 {
+    margin: var(--size-210) !important;
+}
+
 .mx-2 {
     margin-inline: var(--size-2) !important;
 }
@@ -2009,6 +2014,10 @@ input:focus-visible {
 
 .mx-160 {
     margin-inline: var(--size-160) !important;
+}
+
+.mx-210 {
+    margin-inline: var(--size-210) !important;
 }
 
 .my-2 {
@@ -2167,6 +2176,10 @@ input:focus-visible {
     margin-block: var(--size-160) !important;
 }
 
+.my-210 {
+    margin-block: var(--size-210) !important;
+}
+
 .ms-2 {
     margin-inline-start: var(--size-2) !important;
 }
@@ -2321,6 +2334,10 @@ input:focus-visible {
 
 .ms-160 {
     margin-inline-start: var(--size-160) !important;
+}
+
+.ms-210 {
+    margin-inline-start: var(--size-210) !important;
 }
 
 .me-2 {
@@ -2479,6 +2496,10 @@ input:focus-visible {
     margin-inline-end: var(--size-160) !important;
 }
 
+.me-210 {
+    margin-inline-end: var(--size-210) !important;
+}
+
 .mt-2 {
     margin-block-start: var(--size-2) !important;
 }
@@ -2635,6 +2656,10 @@ input:focus-visible {
     margin-block-start: var(--size-160) !important;
 }
 
+.mt-210 {
+    margin-block-start: var(--size-210) !important;
+}
+
 .mb-2 {
     margin-block-end: var(--size-2) !important;
 }
@@ -2789,6 +2814,10 @@ input:focus-visible {
 
 .mb-160 {
     margin-block-end: var(--size-160) !important;
+}
+
+.mb-210 {
+    margin-block-end: var(--size-210) !important;
 }
 
 .mt-0 {
@@ -3066,6 +3095,10 @@ input:focus-visible {
     padding: var(--size-160) !important;
 }
 
+.p-210 {
+    padding: var(--size-210) !important;
+}
+
 .px-2 {
     padding-inline: var(--size-2) !important;
 }
@@ -3220,6 +3253,10 @@ input:focus-visible {
 
 .px-160 {
     padding-inline: var(--size-160) !important;
+}
+
+.px-210 {
+    padding-inline: var(--size-210) !important;
 }
 
 .py-2 {
@@ -3378,6 +3415,10 @@ input:focus-visible {
     padding-block: var(--size-160) !important;
 }
 
+.py-210 {
+    padding-block: var(--size-210) !important;
+}
+
 .ps-2 {
     padding-inline-start: var(--size-2) !important;
 }
@@ -3532,6 +3573,10 @@ input:focus-visible {
 
 .ps-160 {
     padding-inline-start: var(--size-160) !important;
+}
+
+.ps-210 {
+    padding-inline-start: var(--size-210) !important;
 }
 
 .pe-2 {
@@ -3690,6 +3735,10 @@ input:focus-visible {
     padding-inline-end: var(--size-160) !important;
 }
 
+.pe-210 {
+    padding-inline-end: var(--size-210) !important;
+}
+
 .pt-2 {
     padding-block-start: var(--size-2) !important;
 }
@@ -3846,6 +3895,10 @@ input:focus-visible {
     padding-block-start: var(--size-160) !important;
 }
 
+.pt-210 {
+    padding-block-start: var(--size-210) !important;
+}
+
 .pb-2 {
     padding-block-end: var(--size-2) !important;
 }
@@ -4000,6 +4053,10 @@ input:focus-visible {
 
 .pb-160 {
     padding-block-end: var(--size-160) !important;
+}
+
+.pb-210 {
+    padding-block-end: var(--size-210) !important;
 }
 
 .p--24 {
@@ -4318,6 +4375,11 @@ input:focus-visible {
     z-index: -1;
 }
 
+.bg-overlay.style-two::before {
+    background: linear-gradient(180deg, rgba(18, 21, 53, 0.47) 34.18%, rgba(18, 21, 53, 0.5) 75.48%), linear-gradient(180deg, rgba(18, 21, 53, 0) 27.17%, rgba(18, 21, 53, 0.5) 79.35%);
+    z-index: 0;
+}
+
 .bg-start {
     background-position: left !important;
 }
@@ -4328,6 +4390,10 @@ input:focus-visible {
 
 .w-30-percent {
     width: 30%;
+}
+
+.group:hover .group-item-white {
+    color: hsl(var(--white)) !important;
 }
 
 /* ================================= Classes Css End =========================== */
@@ -4515,6 +4581,10 @@ input:focus-visible {
     width: 10rem !important;
 }
 
+.w-210 {
+    width: 13.125rem !important;
+}
+
 .w-300 {
     width: 300px !important;
 }
@@ -4681,6 +4751,10 @@ input:focus-visible {
 
 .h-160 {
     height: 10rem !important;
+}
+
+.h-210 {
+    height: 13.125rem !important;
 }
 
 .h-unset {
@@ -7393,6 +7467,10 @@ input:focus-visible {
     font-size: 10rem !important;
 }
 
+.text-210 {
+    font-size: 13.125rem !important;
+}
+
 /* Font Size Class End */
 /* Box shadow start */
 .box-shadow-sm {
@@ -7575,6 +7653,10 @@ input:focus-visible {
 
 .rounded-160 {
     border-radius: 10rem !important;
+}
+
+.rounded-210 {
+    border-radius: 13.125rem !important;
 }
 
 .rounded-top-right-0 {
@@ -7843,6 +7925,10 @@ input:focus-visible {
 
 .gap-160 {
     gap: var(--size-160) !important;
+}
+
+.gap-210 {
+    gap: var(--size-210) !important;
 }
 
 /* Hover Classes Start */
@@ -9954,4 +10040,83 @@ input:focus-visible {
         display: none;
     }
 }
+/* ======================== Vendors Two Page css Start ============================= */
+.grid-cols-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 24px;
+}
+
+@media screen and (max-width: 1199px) {
+    .grid-cols-3 {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .grid-cols-3 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.grid-cols-3.list-view {
+    grid-template-columns: 1fr 1fr !important;
+}
+
+@media screen and (max-width: 1399px) {
+    .grid-cols-3.list-view {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.list-view .vendors-two-item {
+    display: flex;
+}
+
+/* ======================== Vendors Two Page css End ============================= */
+/* ============================== Vendor Two Details Css Start =============================== */
+.grid-cols-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    gap: 24px;
+}
+
+@media screen and (max-width: 1399px) {
+    .grid-cols-4 {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .grid-cols-4 {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .grid-cols-4 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.grid-cols-4.list-view {
+    grid-template-columns: 1fr 1fr !important;
+}
+
+@media screen and (max-width: 1399px) {
+    .grid-cols-4.list-view {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.vendor-two-details .shop-sidebar {
+    width: 332px;
+}
+
+.vendor-two-details__contents {
+    flex-grow: 1;
+    width: calc(100% - 356px);
+}
+
+/* ============================== Vendor Two Details Css End =============================== */
 /*# sourceMappingURL=main.css.map */

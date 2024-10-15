@@ -183,6 +183,12 @@
         background: linear-gradient(0deg, rgba(18, 21, 53, 0.7) 0%, rgba(18, 21, 53, 0.7) 100%);
         z-index: -1;
     }
+    &.style-two {
+        &::before {
+            background: linear-gradient(180deg, rgb(18 21 53 / 47%) 34.18%, rgba(18, 21, 53, 0.5) 75.48%), linear-gradient(180deg, rgba(18, 21, 53, 0) 27.17%, rgba(18, 21, 53, 0.5) 79.35%);
+            z-index: 0;
+        }
+    }
 }
 
 .bg-start {
@@ -195,5 +201,13 @@
 
 .w-30-percent {
     width: 30%;
+}
+
+.group {
+    &:hover {
+        .group-item-white {
+            color: hsl(var(--white)) !important;
+        }
+    }
 }
 /* ================================= Classes Css End =========================== */
