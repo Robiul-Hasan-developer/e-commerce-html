@@ -1077,11 +1077,11 @@
       allowCss3Support: true,
       css3easing: 'linear',
       easing: 'linear',
-      delayBeforeStart: 1000,
+      delayBeforeStart: 0,
       duration: 7000,
       gap: 20,
       pauseOnCycle: false,
-      startVisible: false
+      startVisible: true
     });
     // ========================== Text Slide Js End =====================
 
@@ -1236,6 +1236,33 @@
     easing: 'ease',
   });
   // ========================= AOS Animation Js End ===================
+
+  // ========================= Counter Up Js End ===================
+  const counterUp = window.counterUp.default;
+
+  const callback = (entries) => {
+    entries.forEach((entry) => {
+      const el = entry.target;
+      if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+        counterUp(el, {
+          duration: 2000,
+          delay: 16,
+        });
+        el.classList.add('is-visible');
+      }
+    });
+  };
+
+  const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+  // Counter Two for each
+  const counterNumbers = document.querySelectorAll('.counter');
+  if (counterNumbers.length > 0) {
+    counterNumbers.forEach((counterNumber) => {
+      IO.observe(counterNumber);
+    });
+  }
+
 
   
   });

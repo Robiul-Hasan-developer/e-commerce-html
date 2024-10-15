@@ -27,13 +27,11 @@
 
 .testimonials-thumbs {
     overflow: hidden;
-    transition: .2s linear;
-    // height: 650px !important;
     &__img {
         max-height: 350px;
         height: 100%;
         width: 100%;
-        transition: .2s linear;
+        transition: .6s linear;
         position: relative;
         img {
             object-position: top;
@@ -66,8 +64,6 @@
         align-items: end;
     }
     .slick-slide {
-        transition: .3s linear;
-        // height: 630px !important;
         &.slick-active.slick-current .testimonials-thumbs {
             overflow: unset !important;
             &__img {

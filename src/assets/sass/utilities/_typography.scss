@@ -20,6 +20,10 @@ body {
   position: relative;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 p {
   font-weight: 400;
   margin: 0;

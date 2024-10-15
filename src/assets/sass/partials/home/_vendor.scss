@@ -8,6 +8,10 @@
     background: #F4F6E6;
     mask-position: top;
     mask-size: 100% 100%;
+    &.style-two {
+        -webkit-mask-image: url(../images/shape/box-shape3.png);
+        mask-image: url(../images/shape/box-shape3.png);
+    }
     &__logo {
         max-width: 66px;
     }
