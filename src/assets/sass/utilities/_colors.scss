@@ -19,6 +19,9 @@
     &-main {
         color: hsl(var(--main)) !important;
     }
+    &-yellow {
+        color: #FFCC53 !important;
+    }
 }
   
   @each $color, $shades in $colors {
