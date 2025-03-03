@@ -51,3 +51,22 @@
     background-color: #F6F5DB !important;
   }
 }
+
+.gradient-shadow {
+  position: relative;
+  &::before, &::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(90deg, #ffffff, transparent);
+    z-index: 1;
+  }
+  &::after {
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+    background: linear-gradient(-90deg, #fff, transparent);
+  }
+}

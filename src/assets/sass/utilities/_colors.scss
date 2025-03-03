@@ -13,8 +13,17 @@
     &-heading {
         color: hsl(var(--heading-color)) !important;
     }
+    &-heading-two {
+        color: #2D2727 !important;
+    }
+    &-heading-three {
+        color: #333333 !important;
+    }
     &-body {
         color: hsl(var(--body-color)) !important;
+    }
+    &-body-two {
+        color: #6B7280 !important;
     }
     &-main {
         color: hsl(var(--main)) !important;

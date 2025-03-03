@@ -142,6 +142,7 @@
     --main-two-700: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.1));
     --main-two-800: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2));
     --main-two-900: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3));
+    --neutral-40: #E5E7EB;
     --neutral-50: #ECF1F9;
     --neutral-100: #E6E6E6;
     --neutral-200: #CCCCCC;
@@ -193,7 +194,7 @@
     --success-300: #86EFAC;
     --success-400: #4ADE80;
     --success-500: #22C55E;
-    --success-600: #27AE60;
+    --success-600: #2ABC79;
     --success-700: #15803D;
     --success-800: #166534;
     --success-900: #14532D;
@@ -560,6 +561,14 @@
     background-color: hsl(var(--main));
     border: 1px solid hsl(var(--main));
     color: hsl(var(--black));
+}
+
+.placeholder-italic::placeholder {
+    font-style: italic;
+}
+
+.placeholder-text-sm::placeholder {
+    font-size: 0.75rem;
 }
 
 .common-input--withIcon {
@@ -1325,16 +1334,20 @@ input[type=number] {
 }
 
 .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-track {
-    background: #e4e4e4;
+    background: #ecebeb;
 }
 
 .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb {
-    background: #a2a2a2;
+    background: #cecece;
     border-radius: 50px;
 }
 
 .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb:hover {
-    background: #6d6d6d;
+    background: #c0c0c0;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb:active {
+    background: #b6b6b6;
 }
 
 .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -1388,6 +1401,24 @@ input[type=number] {
         font-size: 12px;
     }
 }
+
+.select-style-one .select2-container .selection {
+    height: 100%;
+}
+
+.select-style-one .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: unset;
+}
+
+.select-style-one .select2-container--default .select2-selection--single .select2-selection__arrow b::before {
+    font-weight: 400;
+}
+
+.select-style-one .select2-selection.select2-selection--single {
+    border-color: var(--neutral-40) !important;
+    border-radius: 4px 0 0 4px;
+}
+
 /* ======================= Select 2 Css End =========================== */
 /* ========================== Count Down Css Start =============================== */
 .countdown-list {
@@ -4801,6 +4832,10 @@ input:focus-visible {
     max-width: 120px;
 }
 
+.max-w-184 {
+    max-width: 184px;
+}
+
 .max-w-260 {
     max-width: 260px !important;
 }
@@ -4827,6 +4862,14 @@ input:focus-visible {
 
 .max-w-418 {
     max-width: 418px;
+}
+
+.max-w-700 {
+    max-width: 700px;
+}
+
+.max-w-840 {
+    max-width: 840px;
 }
 
 .max-w-990 {
@@ -4923,6 +4966,10 @@ input:focus-visible {
 
 .text-main-two-900 {
     color: var(--main-two-900) !important;
+}
+
+.text-neutral-40 {
+    color: var(--neutral-40) !important;
 }
 
 .text-neutral-50 {
@@ -5241,8 +5288,20 @@ input:focus-visible {
     color: hsl(var(--heading-color)) !important;
 }
 
+.text-heading-two, .select-style-one .select2-container--default .select2-selection--single .select2-selection__arrow b::before {
+    color: #2D2727 !important;
+}
+
+.text-heading-three {
+    color: #333333 !important;
+}
+
 .text-body {
     color: hsl(var(--body-color)) !important;
+}
+
+.text-body-two {
+    color: #6B7280 !important;
 }
 
 .text-main {
@@ -5331,6 +5390,10 @@ input:focus-visible {
 
 .hover-text-main-two-900:hover {
     color: var(--main-two-900) !important;
+}
+
+.hover-text-neutral-40:hover {
+    color: var(--neutral-40) !important;
 }
 
 .hover-text-neutral-50:hover {
@@ -5742,6 +5805,10 @@ input:focus-visible {
     border-color: var(--main-two-900) !important;
 }
 
+.border-neutral-40 {
+    border-color: var(--neutral-40) !important;
+}
+
 .border-neutral-50 {
     border-color: var(--neutral-50) !important;
 }
@@ -6132,6 +6199,10 @@ input:focus-visible {
 
 .hover-border-main-two-900:hover {
     border-color: var(--main-two-900) !important;
+}
+
+.hover-border-neutral-40:hover {
+    border-color: var(--neutral-40) !important;
 }
 
 .hover-border-neutral-50:hover {
@@ -6534,6 +6605,10 @@ input:focus-visible {
     background-color: var(--main-two-900) !important;
 }
 
+.bg-neutral-40 {
+    background-color: var(--neutral-40) !important;
+}
+
 .bg-neutral-50 {
     background-color: var(--neutral-50) !important;
 }
@@ -6926,6 +7001,10 @@ input:focus-visible {
     background-color: var(--main-two-900) !important;
 }
 
+.hover-bg-neutral-40:hover {
+    background-color: var(--neutral-40) !important;
+}
+
 .hover-bg-neutral-50:hover {
     background-color: var(--neutral-50) !important;
 }
@@ -7268,6 +7347,27 @@ input:focus-visible {
 
 .bg-success-light {
     background-color: #F6F5DB !important;
+}
+
+.gradient-shadow {
+    position: relative;
+}
+
+.gradient-shadow::before, .gradient-shadow::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(90deg, #ffffff, transparent);
+    z-index: 1;
+}
+
+.gradient-shadow::after {
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+    background: linear-gradient(-90deg, #fff, transparent);
 }
 
 /* Font Size Class Start */
@@ -8872,6 +8972,17 @@ input:focus-visible {
     transform: scale(1);
 }
 
+.border-half-start::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 30px;
+    inset-inline-start: 0;
+    top: 50%;
+    background: var(--neutral-40);
+    transform: translateY(-50%);
+}
+
 /* ================= Slick Arrow & Dots css Start ================ */
 .slick-initialized.slick-slider .slick-track {
     display: flex;
@@ -9025,15 +9136,15 @@ input:focus-visible {
 
 .banner-item {
     position: relative;
-    padding-block-start: clamp(2rem, -1.928rem + 8.183vw, 6.25rem);
-    padding-block-end: clamp(2rem, -8.859rem + 22.623vw, 13.75rem);
+    padding-block-start: 80px;
+    padding-block-end: 140px;
     padding-inline-start: clamp(1rem, -11.87rem + 20.758vw, 8.875rem);
     padding-inline-end: clamp(1rem, -5.129rem + 9.885vw, 4.75rem);
     -webkit-mask-image: url(../images/bg/banner-bg2.png);
     mask-image: url(../images/bg/banner-bg2.png);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
-    background: #D3EBC0;
+    background: #E9FFFF;
     mask-position: top;
     mask-size: 100% 100%;
     gap: clamp(1.5rem, -2.151rem + 7.607vw, 4.5rem);
@@ -9043,34 +9154,6 @@ input:focus-visible {
     .banner-item {
         mask-image: none;
         overflow: unset !important;
-    }
-}
-
-.banner-item__title {
-    margin-block-end: clamp(1rem, -2.347rem + 6.973vw, 3.75rem);
-}
-
-@media screen and (max-width: 1499px) {
-    .banner-item__title {
-        font-size: 3.5rem;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .banner-item__title {
-        font-size: 2.875rem;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .banner-item__title {
-        font-size: 1.75rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .banner-item__title {
-        font-size: 1.625rem;
     }
 }
 
@@ -9154,6 +9237,54 @@ input:focus-visible {
         transform: translateY(10px);
     }
 }
+/* Slider Animation Css Start */
+.animate-left-right {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    transition: 0.3s linear;
+}
+
+.slick-current .animate-left-right {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.animate-scale {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 0.3s linear;
+}
+
+.slick-current .animate-scale {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.animation-delay-08 {
+    transition-delay: 800ms;
+}
+
+.animation-delay-1 {
+    transition-delay: 1000ms;
+}
+
+.animation-delay-12 {
+    transition-delay: 1200ms;
+}
+
+.animation-delay-15 {
+    transition-delay: 1500ms;
+}
+
+/* Slider Animation Css End */
 /* ============================== Banner Css End ========================== */
 /* ============================ Feature Section Css start =============================== */
 .feature {
@@ -9264,20 +9395,6 @@ input:focus-visible {
 
 /* ============================ Feature Section Css End =============================== */
 /* ======================== promotional banner Css Start ============================== */
-.promotional-banner-item {
-    padding: clamp(2rem, -1.956rem + 8.241vw, 5.25rem) 24px;
-}
-
-@media screen and (max-width: 575px) {
-    .promotional-banner-item {
-        padding: 24px 16px;
-    }
-}
-
-.promotional-banner-item__content {
-    max-width: 200px;
-}
-
 @media screen and (max-width: 1399px) {
     .promotional-banner-item__title {
         font-size: 1.5rem !important;

@@ -189,16 +189,6 @@
     nextArrow: '#banner-next',
     prevArrow: '#banner-prev',
   });  
-
-  $('.banner-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    $('.wow').css('visibility', 'hidden').removeClass('animated'); 
-  });
-
-  $('.banner-slider').on('afterChange', function(event, slick, currentSlide) {
-    new WOW().init();
-    $('.wow').css('visibility', 'visible'); 
-  });
-
   // ========================= Banner Slider Js End ===================
   
   // ========================= Banner Three Slider Js Start ==============

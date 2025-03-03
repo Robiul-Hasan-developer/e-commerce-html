@@ -18,3 +18,14 @@
         transform: scale(1);
     }
 }
+
+.border-half-start::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 30px;
+    inset-inline-start: 0;
+    top: 50%;
+    background: var(--neutral-40);
+    transform: translateY(-50%);
+}

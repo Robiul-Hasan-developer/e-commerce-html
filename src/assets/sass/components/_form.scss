@@ -78,6 +78,20 @@
         }
     }
 }
+
+.placeholder {
+    &-italic {
+        &::placeholder {
+            font-style: italic;
+        }
+    }
+    &-text-sm {
+        &::placeholder {
+            font-size: rem(12px);
+        }
+    }
+}
+
 .common-input {
     &--withIcon {
         padding-inline-end: 50px !important;
