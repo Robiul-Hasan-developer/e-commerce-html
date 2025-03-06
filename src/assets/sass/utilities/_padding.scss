@@ -49,6 +49,13 @@
   padding: clampCal(8, 56, 1299, 1699);
 }
 
+.ps-56-px {
+  padding-inline-start: clampCal(24, 56, 1299, 1699) !important;
+}
+.px-116-px {
+  padding: clamp(1.5rem, -10rem + 15.3333vw, 7.25rem);
+}
+
 .pt-0 {
   padding-block-start: 0!important;
 }

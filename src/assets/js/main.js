@@ -177,6 +177,26 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
+    autoplaySpeed: 1000,
+    speed: 1000,
+    dots: false,
+    pauseOnHover: true,
+    fade: true,
+    cssEase: 'linear',
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    infinite: true,
+    nextArrow: '#banner-next',
+    prevArrow: '#banner-prev',
+  });  
+  // ========================= Banner Slider Js End ===================
+  
+  // ========================= hot deals Slider Js Start ==============
+  $('.product-one-slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
     autoplaySpeed: 2000,
     speed: 1500,
     dots: false,
@@ -186,10 +206,54 @@
     rtl: $('html').attr('dir') === 'rtl' ? true : false,
     speed: 900,
     infinite: true,
-    nextArrow: '#banner-next',
-    prevArrow: '#banner-prev',
+    nextArrow: '#product-one-next',
+    prevArrow: '#product-one-prev',
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 5,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 5,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+    ]
   });  
-  // ========================= Banner Slider Js End ===================
+  // ========================= hot deals Slider Js End ===================
   
   // ========================= Banner Three Slider Js Start ==============
   $('.banner-three-slider').slick({
@@ -209,14 +273,14 @@
     prevArrow: '#banner-three-prev',
   });  
   
-  $('.banner-three-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    $('.wow').css('visibility', 'hidden').removeClass('animated'); 
-  });
+  // $('.banner-three-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+  //   $('.wow').css('visibility', 'hidden').removeClass('animated'); 
+  // });
 
-  $('.banner-three-slider').on('afterChange', function(event, slick, currentSlide) {
-    new WOW().init();
-    $('.wow').css('visibility', 'visible'); 
-  });
+  // $('.banner-three-slider').on('afterChange', function(event, slick, currentSlide) {
+  //   new WOW().init();
+  //   $('.wow').css('visibility', 'visible'); 
+  // });
   // ========================= Banner Three Slider Js End ===================
 
    // ========================= hot deals Slider Js Start ==============
@@ -1100,6 +1164,18 @@
       }
     });
     // ========================== Trending Products Js End =====================
+
+    // ========================== Wishlist Button Js Start =====================
+    let wishlistBtnTwos = document.querySelectorAll('.wishlist-btn-two');
+
+    if(wishlistBtnTwos) {
+      wishlistBtnTwos.forEach(wishlistBtnTwo => {
+        wishlistBtnTwo.addEventListener('click', function() { 
+          this.classList.toggle('active');
+        });
+      });
+    }
+    // ========================== Wishlist Button Js End =====================
 
     // ========================== Instagram Slider Js Start =====================
     $('.instagram-slider').slick({

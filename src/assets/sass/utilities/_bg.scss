@@ -32,6 +32,9 @@
 }
 
 .bg {
+  &-yellow {
+    background-color: #FFCC53;
+  }
   &-yellow-light {
     background-color: #FFFCE1 !important;
   }
