@@ -173,12 +173,12 @@
 
   
   // ========================= Banner Slider Js Start ==============
-  $('.banner-slider').slick({
+  $('.banner-slider').slick({  
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 1000,
-    speed: 1000,
+    autoplaySpeed: 100,
+    speed: 400,
     dots: false,
     pauseOnHover: true,
     fade: true,
@@ -747,8 +747,29 @@
     prevArrow: '<button type="button" class="slick-prev border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute hover-bg-main-600 hover-text-white hover-border-main-600 transition-1"><i class="ph ph-caret-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute hover-bg-main-600 hover-text-white hover-border-main-600 transition-1"><i class="ph ph-caret-right"></i></button>',
   });  
-  
 // ========================= hot deals Slider Js End ===================
+
+
+// ========================= Copy Coupon Code Js Start ===================
+let copyCouponBtn = document.querySelector('.copy-coupon-btn');
+let copyText = document.querySelector('.copy-text');
+
+if(copyCouponBtn && copyText) {
+  copyCouponBtn.addEventListener('click', function () {
+    let text = this.textContent;
+    navigator.clipboard.writeText(text);
+    this.classList.add('copied'); 
+    copyText.innerHTML = 'Copied';
+    copyText.style.display = 'inline-block';
+
+    setTimeout(() => {
+      this.classList.remove('copied');
+      copyText.style.display = 'none';
+    }, 2000);
+
+  });
+}
+// ========================= Copy Coupon Code Js End ===================
 
   
   // ========================= hot deals Slider Js Start ==============

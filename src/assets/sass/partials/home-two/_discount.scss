@@ -9,4 +9,8 @@
 .discount-three-item {
     padding: clampCal(32, 136) clampCal(24, 56);
 }
+
+.copied i::before {
+    content: "\E1CC" !important;
+}
 /* =============================== Discount css End ============================ */

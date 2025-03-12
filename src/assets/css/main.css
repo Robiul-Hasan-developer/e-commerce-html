@@ -9680,6 +9680,12 @@ input:focus-visible {
     inset-inline-end: 50px;
 }
 
+.short-product-list {
+    max-height: 400px;
+  /* Adjust as needed */
+    overflow: hidden;
+}
+
 /* ================================== short product Css End ================================== */
 /* ========================= Brand Css Start ======================== */
 .brand-item img {
@@ -9863,6 +9869,10 @@ input:focus-visible {
 
 .discount-three-item {
     padding: clamp(2rem, -5.911rem + 16.482vw, 8.5rem) clamp(1.5rem, -0.934rem + 5.071vw, 3.5rem);
+}
+
+.copied i::before {
+    content: "\e1cc" !important;
 }
 
 /* =============================== Discount css End ============================ */
