@@ -90,6 +90,11 @@
             font-size: rem(12px);
         }
     }
+    &-text-14 {
+        &::placeholder {
+            font-size: rem(14px);
+        }
+    }
 }
 
 .common-input {

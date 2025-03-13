@@ -571,6 +571,10 @@
     font-size: 0.75rem;
 }
 
+.placeholder-text-14::placeholder {
+    font-size: 0.875rem;
+}
+
 .common-input--withIcon {
     padding-inline-end: 50px !important;
 }
@@ -4112,6 +4116,10 @@ input:focus-visible {
 
 .px-116-px {
     padding: clamp(1.5rem, -10rem + 15.3333vw, 7.25rem);
+}
+
+.px-80-px {
+    padding: clamp(1.5rem, -10rem + 15.3333vw, 5rem);
 }
 
 .pt-0 {
