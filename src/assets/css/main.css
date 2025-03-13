@@ -1471,6 +1471,10 @@ input[type=number] {
     color: #fff;
 }
 
+.countdown-list__item.colon-red::before {
+    color: #FF6600;
+}
+
 .countdown-list.style-two .countdown-list__item {
     background-color: var(--main-600);
     color: #fff !important;
@@ -9682,8 +9686,11 @@ input:focus-visible {
 
 .short-product-list {
     max-height: 400px;
-  /* Adjust as needed */
     overflow: hidden;
+}
+
+.short-product-list .slick-initialized.slick-slider .slick-slide {
+    margin: 0;
 }
 
 /* ================================== short product Css End ================================== */

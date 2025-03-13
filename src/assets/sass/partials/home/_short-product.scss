@@ -28,7 +28,10 @@
 }
 
 .short-product-list {
-    max-height: 400px; /* Adjust as needed */
+    max-height: 400px;
     overflow: hidden;
+    .slick-initialized.slick-slider .slick-slide {
+        margin: 0;
+    }
 }
 /* ================================== short product Css End ================================== */

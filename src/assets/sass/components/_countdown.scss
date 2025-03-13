@@ -33,6 +33,11 @@
                 color: #fff;
             }
         }
+        &.colon-red {
+            &::before {
+                color: #FF6600;
+            }
+        }
     }
 
     &.style-two {
