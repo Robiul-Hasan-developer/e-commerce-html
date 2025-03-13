@@ -9689,8 +9689,8 @@ input:focus-visible {
     overflow: hidden;
 }
 
-.short-product-list .slick-initialized.slick-slider .slick-slide {
-    margin: 0;
+.short-product-list .slick-slide {
+    margin: 0 !important;
 }
 
 /* ================================== short product Css End ================================== */

@@ -731,23 +731,6 @@
 
   
   // ========================= hot deals Slider Js Start ==============
-  // $('.short-product-list').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   speed: 1500,
-  //   dots: false,
-  //   pauseOnHover: true,
-  //   arrows: true,
-  //   draggable: true,
-  //   rtl: $('html').attr('dir') === 'rtl' ? true : false,
-  //   speed: 900,
-  //   infinite: true,
-  //   prevArrow: '<button type="button" class="slick-prev border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute hover-bg-main-600 hover-text-white hover-border-main-600 transition-1"><i class="ph ph-caret-left"></i></button>',
-  //   nextArrow: '<button type="button" class="slick-next border border-gray-100 w-30 h-30 bg-transparent rounded-pill position-absolute hover-bg-main-600 hover-text-white hover-border-main-600 transition-1"><i class="ph ph-caret-right"></i></button>',
-  // });  
-
   $('.short-product-list').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
