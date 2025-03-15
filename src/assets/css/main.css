@@ -64,8 +64,8 @@
     --main-l: 36%;
     --main: var(--main-h) var(--main-s) var(--main-l);
   /* template main color */
-    --main-two-h: 25;
-    --main-two-s: 100%;
+    --main-two-h: 224;
+    --main-two-s: 71%;
     --main-two-l: 49%;
     --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
   /* White Color */
@@ -5336,6 +5336,10 @@ input:focus-visible {
     color: #FFCC53 !important;
 }
 
+.text-white-6 {
+    color: hsl(var(--white)/0.6);
+}
+
 .hover-text-main-50:hover {
     color: var(--main-50) !important;
 }
@@ -9743,8 +9747,8 @@ input:focus-visible {
 /* ======================= Newsletter Css End =========================== */
 /* Home Two Css Start */
 .color-two:root {
-    --main-h: 24;
-    --main-s: 100%;
+    --main-h: 224;
+    --main-s: 71%;
     --main-l: 49%;
 }
 

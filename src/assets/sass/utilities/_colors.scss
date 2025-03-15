@@ -33,6 +33,12 @@
     }
 }
   
+.text-white {
+    &-6 {
+        color: hsl(var(--white)/.6);
+    }
+}
+
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
       .hover-text-#{$color}-#{$shade} {
