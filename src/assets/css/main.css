@@ -142,6 +142,7 @@
     --main-two-700: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.1));
     --main-two-800: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2));
     --main-two-900: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3));
+    --neutral-30: #F2F5FA;
     --neutral-40: #E5E7EB;
     --neutral-50: #ECF1F9;
     --neutral-100: #E6E6E6;
@@ -573,6 +574,14 @@
 
 .placeholder-text-14::placeholder {
     font-size: 0.875rem;
+}
+
+.placeholder-fw-medium::placeholder {
+    font-weight: 500;
+}
+
+.placeholder-light::placeholder {
+    color: #889AAE;
 }
 
 .common-input--withIcon {
@@ -4896,6 +4905,10 @@ input:focus-visible {
     max-width: 840px;
 }
 
+.max-w-870 {
+    max-width: 870px;
+}
+
 .max-w-990 {
     max-width: 990px;
 }
@@ -4990,6 +5003,10 @@ input:focus-visible {
 
 .text-main-two-900 {
     color: var(--main-two-900) !important;
+}
+
+.text-neutral-30 {
+    color: var(--neutral-30) !important;
 }
 
 .text-neutral-40 {
@@ -5420,6 +5437,10 @@ input:focus-visible {
     color: var(--main-two-900) !important;
 }
 
+.hover-text-neutral-30:hover {
+    color: var(--neutral-30) !important;
+}
+
 .hover-text-neutral-40:hover {
     color: var(--neutral-40) !important;
 }
@@ -5833,6 +5854,10 @@ input:focus-visible {
     border-color: var(--main-two-900) !important;
 }
 
+.border-neutral-30 {
+    border-color: var(--neutral-30) !important;
+}
+
 .border-neutral-40 {
     border-color: var(--neutral-40) !important;
 }
@@ -6227,6 +6252,10 @@ input:focus-visible {
 
 .hover-border-main-two-900:hover {
     border-color: var(--main-two-900) !important;
+}
+
+.hover-border-neutral-30:hover {
+    border-color: var(--neutral-30) !important;
 }
 
 .hover-border-neutral-40:hover {
@@ -6633,6 +6662,10 @@ input:focus-visible {
     background-color: var(--main-two-900) !important;
 }
 
+.bg-neutral-30 {
+    background-color: var(--neutral-30) !important;
+}
+
 .bg-neutral-40 {
     background-color: var(--neutral-40) !important;
 }
@@ -7027,6 +7060,10 @@ input:focus-visible {
 
 .hover-bg-main-two-900:hover {
     background-color: var(--main-two-900) !important;
+}
+
+.hover-bg-neutral-30:hover {
+    background-color: var(--neutral-30) !important;
 }
 
 .hover-bg-neutral-40:hover {
@@ -8083,6 +8120,15 @@ input:focus-visible {
     gap: var(--size-210) !important;
 }
 
+.gap-20-px {
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .gap-20-px {
+        gap: 10px;
+    }
+}
 /* Hover Classes Start */
 .item-hover:hover .item-hover__text {
     color: var(--main-600) !important;
@@ -8150,10 +8196,6 @@ input:focus-visible {
 @media screen and (max-width: 767px) {
     .header-top__right {
         width: 100%;
-    }
-
-    .header-top__right li:last-child {
-        margin-inline-start: auto;
     }
 
     .header-top__right li:nth-last-child(2) {
@@ -8260,6 +8302,11 @@ input:focus-visible {
     font-size: 8px;
 }
 
+@media screen and (max-width: 991px) {
+    .header-top__right.style-three > li a {
+        color: var(--neutral-500) !important;
+    }
+}
 /* =========================== header top Css End =============================== */
 /* ============= Header Start Here ======================= */
 .header {
@@ -8574,7 +8621,7 @@ input:focus-visible {
 @media screen and (max-width: 575px) {
     .category-two .category__button {
         font-size: 12px;
-        padding: 8px 4px !important;
+        padding: 8px 12px !important;
     }
 }
 
@@ -8609,6 +8656,15 @@ input:focus-visible {
     border-bottom: 0 !important;
 }
 
+.md-rounded-top {
+    border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+    .md-rounded-top {
+        border-radius: 6px 6px 0 0;
+    }
+}
 /* ================================= Header Css End =========================== */
 /* =========================== header Middle Css Start =============================== */
 .header-middle {

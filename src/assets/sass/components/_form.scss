@@ -95,6 +95,16 @@
             font-size: rem(14px);
         }
     }
+    &-fw-medium {
+        &::placeholder {
+            font-weight: 500;
+        }
+    }
+    &-light {
+        &::placeholder {
+            color: #889AAE;
+        }
+    }
 }
 
 .common-input {

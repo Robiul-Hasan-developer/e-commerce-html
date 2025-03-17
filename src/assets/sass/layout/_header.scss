@@ -280,7 +280,7 @@
         width: 100%;
         @include msm-screen {
             font-size: 12px;
-            padding: 8px 4px !important;
+            padding: 8px 12px !important;
         }
         &.active .arrow-icon i::before {
             content: "\E13A";
@@ -311,4 +311,10 @@
     }
 }
 
+.md-rounded-top {
+    border-radius: 6px;
+    @media (min-width: 992px) {
+        border-radius: 6px 6px 0 0;
+    }
+}
 /* ================================= Header Css End =========================== */
