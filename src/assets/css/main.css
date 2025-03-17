@@ -8857,6 +8857,11 @@ input:focus-visible {
         inset-inline-start: 0;
     }
 }
+
+.responsive-dropdown__list li:last-child {
+    border-bottom: 0 !important;
+}
+
 /* Category Dropdown Responsive Css End */
 /* =========================== header Middle Css End =============================== */
 /* Mobile Menu Sidebar Start */
