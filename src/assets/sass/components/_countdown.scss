@@ -30,7 +30,7 @@
         }
         &.colon-white {
             &::before {
-                color: #fff;
+                color: #fff !important;
             }
         }
         &.colon-red {

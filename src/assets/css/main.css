@@ -1482,7 +1482,7 @@ input[type=number] {
 }
 
 .countdown-list__item.colon-white::before {
-    color: #fff;
+    color: #fff !important;
 }
 
 .countdown-list__item.colon-red::before {
@@ -6651,6 +6651,10 @@ input:focus-visible {
     border-style: dotted !important;
 }
 
+.border-white-13 {
+    border-color: #FFFFFF21 !important;
+}
+
 .bg-main-50 {
     background-color: var(--main-50) !important;
 }
@@ -7453,6 +7457,10 @@ input:focus-visible {
 
 .hover-bg-white:hover {
     background-color: hsl(var(--white)) !important;
+}
+
+.bg-white-12 {
+    background: #FFFFFF1F;
 }
 
 .bg-light-purple {
