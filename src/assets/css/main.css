@@ -116,6 +116,7 @@
     --size-72: 4.5rem;
     --size-76: 4.75rem;
     --size-80: 5rem;
+    --size-84: 5.25rem;
     --size-90: 5.625rem;
     --size-110: 6.875rem;
     --size-120: 7.5rem;
@@ -1888,6 +1889,10 @@ input:focus-visible {
     margin: var(--size-80) !important;
 }
 
+.m-84 {
+    margin: var(--size-84) !important;
+}
+
 .m-90 {
     margin: var(--size-90) !important;
 }
@@ -2046,6 +2051,10 @@ input:focus-visible {
 
 .mx-80 {
     margin-inline: var(--size-80) !important;
+}
+
+.mx-84 {
+    margin-inline: var(--size-84) !important;
 }
 
 .mx-90 {
@@ -2208,6 +2217,10 @@ input:focus-visible {
     margin-block: var(--size-80) !important;
 }
 
+.my-84 {
+    margin-block: var(--size-84) !important;
+}
+
 .my-90 {
     margin-block: var(--size-90) !important;
 }
@@ -2366,6 +2379,10 @@ input:focus-visible {
 
 .ms-80 {
     margin-inline-start: var(--size-80) !important;
+}
+
+.ms-84 {
+    margin-inline-start: var(--size-84) !important;
 }
 
 .ms-90 {
@@ -2528,6 +2545,10 @@ input:focus-visible {
     margin-inline-end: var(--size-80) !important;
 }
 
+.me-84 {
+    margin-inline-end: var(--size-84) !important;
+}
+
 .me-90 {
     margin-inline-end: var(--size-90) !important;
 }
@@ -2688,6 +2709,10 @@ input:focus-visible {
     margin-block-start: var(--size-80) !important;
 }
 
+.mt-84 {
+    margin-block-start: var(--size-84) !important;
+}
+
 .mt-90 {
     margin-block-start: var(--size-90) !important;
 }
@@ -2846,6 +2871,10 @@ input:focus-visible {
 
 .mb-80 {
     margin-block-end: var(--size-80) !important;
+}
+
+.mb-84 {
+    margin-block-end: var(--size-84) !important;
 }
 
 .mb-90 {
@@ -3127,6 +3156,10 @@ input:focus-visible {
     padding: var(--size-80) !important;
 }
 
+.p-84 {
+    padding: var(--size-84) !important;
+}
+
 .p-90 {
     padding: var(--size-90) !important;
 }
@@ -3285,6 +3318,10 @@ input:focus-visible {
 
 .px-80 {
     padding-inline: var(--size-80) !important;
+}
+
+.px-84 {
+    padding-inline: var(--size-84) !important;
 }
 
 .px-90 {
@@ -3447,6 +3484,10 @@ input:focus-visible {
     padding-block: var(--size-80) !important;
 }
 
+.py-84 {
+    padding-block: var(--size-84) !important;
+}
+
 .py-90 {
     padding-block: var(--size-90) !important;
 }
@@ -3605,6 +3646,10 @@ input:focus-visible {
 
 .ps-80 {
     padding-inline-start: var(--size-80) !important;
+}
+
+.ps-84 {
+    padding-inline-start: var(--size-84) !important;
 }
 
 .ps-90 {
@@ -3767,6 +3812,10 @@ input:focus-visible {
     padding-inline-end: var(--size-80) !important;
 }
 
+.pe-84 {
+    padding-inline-end: var(--size-84) !important;
+}
+
 .pe-90 {
     padding-inline-end: var(--size-90) !important;
 }
@@ -3925,6 +3974,10 @@ input:focus-visible {
 
 .pt-80 {
     padding-block-start: var(--size-80) !important;
+}
+
+.pt-84 {
+    padding-block-start: var(--size-84) !important;
 }
 
 .pt-90 {
@@ -4087,6 +4140,10 @@ input:focus-visible {
     padding-block-end: var(--size-80) !important;
 }
 
+.pb-84 {
+    padding-block-end: var(--size-84) !important;
+}
+
 .pb-90 {
     padding-block-end: var(--size-90) !important;
 }
@@ -4121,6 +4178,10 @@ input:focus-visible {
 
 .ps-56-px {
     padding-inline-start: clamp(1.5rem, -4.995rem + 8vw, 3.5rem) !important;
+}
+
+.px-72-px {
+    padding-inline: clamp(2rem, -1.508rem + 5.658vw, 4.5rem) !important;
 }
 
 .px-116-px {
@@ -4625,6 +4686,10 @@ input:focus-visible {
     width: 5rem !important;
 }
 
+.w-84 {
+    width: 5.25rem !important;
+}
+
 .w-90 {
     width: 5.625rem !important;
 }
@@ -4795,6 +4860,10 @@ input:focus-visible {
 
 .h-80 {
     height: 5rem !important;
+}
+
+.h-84 {
+    height: 5.25rem !important;
 }
 
 .h-90 {
@@ -7620,6 +7689,10 @@ input:focus-visible {
     font-size: 5rem !important;
 }
 
+.text-84 {
+    font-size: 5.25rem !important;
+}
+
 .text-90 {
     font-size: 5.625rem !important;
 }
@@ -7822,6 +7895,10 @@ input:focus-visible {
 
 .rounded-80 {
     border-radius: 5rem !important;
+}
+
+.rounded-84 {
+    border-radius: 5.25rem !important;
 }
 
 .rounded-90 {
@@ -8094,6 +8171,10 @@ input:focus-visible {
 
 .gap-80 {
     gap: var(--size-80) !important;
+}
+
+.gap-84 {
+    gap: var(--size-84) !important;
 }
 
 .gap-90 {
@@ -9183,11 +9264,11 @@ input:focus-visible {
 
 .slick-dots li button {
     border: none;
-    background-color: hsl(var(--white)/0.3);
+    background-color: #95a4bb42;
     color: hsl(var(--white));
     margin: 0 3px;
-    width: 12px;
-    height: 12px;
+    width: 32px;
+    height: 6px;
     border-radius: 1px;
     border-radius: 50px;
     text-indent: -9999px;
@@ -9195,7 +9276,6 @@ input:focus-visible {
 }
 
 .slick-dots li.slick-active button {
-    width: 40px;
     background-color: hsl(var(--main-two));
 }
 
@@ -9353,7 +9433,7 @@ input:focus-visible {
     visibility: hidden;
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
-    transition: 0.3s linear;
+    transition: 0.4s linear;
 }
 
 .slick-current .animate-left-right {
@@ -9368,7 +9448,7 @@ input:focus-visible {
     visibility: hidden;
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
-    transition: 0.3s linear;
+    transition: 0.4s linear;
 }
 
 .slick-current .animate-scale {

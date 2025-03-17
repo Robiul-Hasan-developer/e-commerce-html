@@ -52,6 +52,9 @@
 .ps-56-px {
   padding-inline-start: clampCal(24, 56, 1299, 1699) !important;
 }
+.px-72-px {
+  padding-inline: clampCal(32, 72, 992, 1699) !important;
+}
 .px-116-px {
   padding: clamp(1.5rem, -10rem + 15.3333vw, 7.25rem);
 }

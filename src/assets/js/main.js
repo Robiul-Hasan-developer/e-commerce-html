@@ -176,9 +176,9 @@
   $('.banner-slider').slick({  
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 100,
-    speed: 400,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 1000,
     dots: false,
     pauseOnHover: true,
     fade: true,
@@ -272,15 +272,6 @@
     nextArrow: '#banner-three-next',
     prevArrow: '#banner-three-prev',
   });  
-  
-  // $('.banner-three-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-  //   $('.wow').css('visibility', 'hidden').removeClass('animated'); 
-  // });
-
-  // $('.banner-three-slider').on('afterChange', function(event, slick, currentSlide) {
-  //   new WOW().init();
-  //   $('.wow').css('visibility', 'visible'); 
-  // });
   // ========================= Banner Three Slider Js End ===================
 
    // ========================= hot deals Slider Js Start ==============
@@ -420,8 +411,8 @@
   $('.banner-item-two__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 4000,
     speed: 1500,
     dots: true,
     pauseOnHover: true,
@@ -430,6 +421,8 @@
     rtl: $('html').attr('dir') === 'rtl' ? true : false,
     speed: 900,
     infinite: true,
+    fade: true,
+    cssEase: 'linear',
     nextArrow: '#banner-next',
     prevArrow: '#banner-prev',
     responsive: [
