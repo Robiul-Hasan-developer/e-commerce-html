@@ -8477,7 +8477,7 @@ input:focus-visible {
 
 .submenus-submenu {
     position: absolute;
-    z-index: 99999999999;
+    z-index: 9999;
     background: hsl(var(--white));
     width: 300px;
     inset-inline-start: 100%;
@@ -8486,6 +8486,7 @@ input:focus-visible {
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
+    height: 100%;
 }
 
 .submenus-submenu__list li a {
