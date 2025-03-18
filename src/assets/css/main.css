@@ -9985,21 +9985,6 @@ input:focus-visible {
         font-size: 1.5rem;
     }
 }
-
-.banner-item-two__thumb {
-    inset-inline-end: clamp(1.5rem, -20.232rem + 29vw, 8.75rem);
-    text-align: end;
-    max-width: 41%;
-}
-
-@media screen and (max-width: 575px) {
-    .banner-item-two__thumb {
-        max-width: 50%;
-        position: relative !important;
-        margin-top: 32px;
-        inset-inline-end: 0;
-    }
-}
 /* ================================= Banner Two Css End ================================= */
 /* Week Deals Start  */
 .deal-week-box__content {

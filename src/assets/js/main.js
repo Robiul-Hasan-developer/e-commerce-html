@@ -434,14 +434,6 @@
       }
     ]
   });  
-  $('.banner-item-two__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    $('.wow').css('visibility', 'hidden').removeClass('animated'); 
-  });
-
-  $('.banner-item-two__slider').on('afterChange', function(event, slick, currentSlide) {
-    new WOW().init();
-    $('.wow').css('visibility', 'visible'); 
-  });
   // ========================= Banner Slider Js End ===================
 
   
@@ -1314,7 +1306,7 @@ if(copyCouponBtn && copyText) {
   AOS.init({
     offset: 40,
     duration: 1000,
-    // once: true,
+    once: true,
     easing: 'ease',
   });
   // ========================= AOS Animation Js End ===================

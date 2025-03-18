@@ -33,15 +33,13 @@
         }
     }
     &__thumb {
-        inset-inline-end: clampCal(24, 140, 1199, 1599);
-        text-align: end;
-        max-width: 41%;
-        @include msm-screen {
-            max-width: 50%;
-            position: relative !important; 
-            margin-top: 32px;
-            inset-inline-end: 0; 
-        }
+        // inset-inline-end: clampCal(24, 140, 1199, 1599);
+        // max-width: 50%;
+        // @include msm-screen {
+        //     max-width: 50%;
+        //     position: relative !important; 
+        //     inset-inline-end: 0; 
+        // }
     }
 }
 /* ================================= Banner Two Css End ================================= */
