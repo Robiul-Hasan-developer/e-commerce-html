@@ -1545,7 +1545,7 @@ input[type=number] {
     content: "";
     width: 12px;
     height: 12px;
-    background: var(--main-two-600);
+    background: inherit;
     border-radius: 2px;
     inset-inline-start: -4px;
     transform: translateY(-50%) rotate(45deg);
@@ -4718,6 +4718,10 @@ input:focus-visible {
     width: 300px !important;
 }
 
+.w-310 {
+    width: 310px;
+}
+
 .w-265 {
     width: 265px !important;
 }
@@ -7471,6 +7475,10 @@ input:focus-visible {
     background-color: #FFCC53;
 }
 
+.bg-paste {
+    background-color: #10D5DC;
+}
+
 .bg-yellow-light {
     background-color: #FFFCE1 !important;
 }
@@ -8699,7 +8707,7 @@ input:focus-visible {
 
 @media (min-width: 992px) {
     .category-two {
-        width: 265px;
+        width: 310px;
     }
 }
 
@@ -8721,7 +8729,7 @@ input:focus-visible {
 .responsive-dropdown.style-two {
     width: 100%;
     border-radius: 0 0 16px 16px;
-    width: 265px;
+    width: 310px;
     max-height: 900px;
 }
 

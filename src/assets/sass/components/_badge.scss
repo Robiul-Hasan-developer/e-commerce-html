@@ -20,7 +20,7 @@
     content: "";
     width: 12px;
     height: 12px;
-    background: var(--main-two-600);
+    background: inherit;
     border-radius: 2px;
     inset-inline-start: -4px;
     transform: translateY(-50%) rotate(45deg);
