@@ -7483,6 +7483,10 @@ input:focus-visible {
     background: #ECDBEC !important;
 }
 
+.bg-black-light {
+    background-color: #1A1A1A;
+}
+
 .bg-yellow {
     background-color: #FFCC53;
 }
