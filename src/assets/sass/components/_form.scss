@@ -95,6 +95,11 @@
             font-size: rem(14px);
         }
     }
+    &-text-16 {
+        &::placeholder {
+            font-size: rem(16px);
+        }
+    }
     &-fw-medium {
         &::placeholder {
             font-weight: 500;

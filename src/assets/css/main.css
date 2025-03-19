@@ -577,6 +577,10 @@
     font-size: 0.875rem;
 }
 
+.placeholder-text-16::placeholder {
+    font-size: 1rem;
+}
+
 .placeholder-fw-medium::placeholder {
     font-weight: 500;
 }
@@ -6647,6 +6651,10 @@ input:focus-visible {
     border-color: var(--tertiary-600) !important;
 }
 
+.focus-border-main-600:focus {
+    border-color: var(--main-600) !important;
+}
+
 .border-dashed {
     border-style: dashed !important;
 }
@@ -7465,6 +7473,10 @@ input:focus-visible {
 
 .bg-white-12 {
     background: #FFFFFF1F;
+}
+
+.bg-white-06 {
+    background: #FFFFFF0F !important;
 }
 
 .bg-light-purple {
