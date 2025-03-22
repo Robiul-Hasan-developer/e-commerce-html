@@ -342,4 +342,14 @@
         }
     }
 }
+
+.header-style-two {
+    .header {
+        padding-bottom: 24px;
+    }
+    .category__button {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
 /* ================================= Header Css End =========================== */

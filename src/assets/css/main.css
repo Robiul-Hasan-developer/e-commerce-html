@@ -8814,6 +8814,15 @@ input:focus-visible {
     transform: rotate(180deg);
 }
 
+.header-style-two .header {
+    padding-bottom: 24px;
+}
+
+.header-style-two .category__button {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 /* ================================= Header Css End =========================== */
 /* =========================== header Middle Css Start =============================== */
 .header-middle {
@@ -9021,7 +9030,7 @@ input:focus-visible {
     height: 100vh;
     overflow-y: auto;
     padding: 24px;
-    z-index: 991;
+    z-index: 9999;
     transform: translateX(-100%);
     transition: 0.2s linear;
     padding-block-end: 68px;

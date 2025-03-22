@@ -209,13 +209,12 @@
       categoryButton.classList.add('active');
       categoryDropdown.classList.add('active');
     });
+
+    document.querySelector('body').addEventListener('click', function () {
+      categoryButton.classList.remove('active');
+      categoryDropdown.classList.remove('active');
+    });
   }
-
-  document.querySelector('body').addEventListener('click', function () {
-    categoryButton.classList.remove('active');
-    categoryDropdown.classList.remove('active');
-  });
-
   // ========================= Category Js End ===================
   
   // ========================= hot deals Slider Js Start ==============
