@@ -198,11 +198,24 @@
   let categoryDropdown = document.querySelector('.category-dropdown');
 
   if(categoryButton && categoryDropdown) {
-    categoryButton.addEventListener('click', function () {
+    categoryButton.addEventListener('click', function (event) {
+      event.stopPropagation();
       this.classList.toggle('active');
       categoryDropdown.classList.toggle('active');
     });
+    
+    categoryDropdown.addEventListener('click', function (event) {
+      event.stopPropagation();
+      categoryButton.classList.add('active');
+      categoryDropdown.classList.add('active');
+    });
   }
+
+  document.querySelector('body').addEventListener('click', function () {
+    categoryButton.classList.remove('active');
+    categoryDropdown.classList.remove('active');
+  });
+
   // ========================= Category Js End ===================
   
   // ========================= hot deals Slider Js Start ==============
