@@ -47,9 +47,9 @@
     &__item {
         &.activePage {
             > a {
-                color: hsl(var(--main));
+                color: hsl(var(--main)) !important;
                 &::before {
-                    color: hsl(var(--main));
+                    color: hsl(var(--main)) !important;
                 }
             }
         }
@@ -57,7 +57,7 @@
             > a {
                 color: var(--gray-400);
                 @media (min-width: 992px) {
-                    color: hsl(var(--main));
+                    color: hsl(var(--main)) !important;
                 }
             }
         }

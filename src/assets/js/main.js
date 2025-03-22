@@ -191,6 +191,19 @@
     prevArrow: '#banner-prev',
   });  
   // ========================= Banner Slider Js End ===================
+
+  
+  // ========================= Category Js Start ===================
+  let categoryButton = document.querySelector('.category-button');
+  let categoryDropdown = document.querySelector('.category-dropdown');
+
+  if(categoryButton && categoryDropdown) {
+    categoryButton.addEventListener('click', function () {
+      this.classList.toggle('active');
+      categoryDropdown.classList.toggle('active');
+    });
+  }
+  // ========================= Category Js End ===================
   
   // ========================= hot deals Slider Js Start ==============
   $('.product-one-slider').slick({

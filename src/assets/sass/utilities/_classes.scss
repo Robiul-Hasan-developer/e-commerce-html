@@ -82,6 +82,9 @@
     &-block-start-0 {
         inset-block-start: 0 !important;
     }
+    &-block-start-100 {
+        inset-block-start: 100% !important;
+    }
     &-block-end-0 {
         inset-block-end: 0 !important;
     }
@@ -208,6 +211,12 @@
         .group-item-white {
             color: hsl(var(--white)) !important;
         }
+    }
+}
+
+.z {
+    &-99 {
+        z-index: 99;
     }
 }
 /* ================================= Classes Css End =========================== */

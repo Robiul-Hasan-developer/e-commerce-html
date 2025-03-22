@@ -17,6 +17,10 @@
     }
 }
 
+.grid-cols-3-repeat {
+    grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
+}
+
 .list-view {
     .vendors-two-item {
         display: flex;

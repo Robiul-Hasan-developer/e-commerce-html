@@ -4409,6 +4409,10 @@ input:focus-visible {
     inset-block-start: 0 !important;
 }
 
+.inset-block-start-100 {
+    inset-block-start: 100% !important;
+}
+
 .inset-block-end-0 {
     inset-block-end: 0 !important;
 }
@@ -4523,6 +4527,10 @@ input:focus-visible {
 
 .group:hover .group-item-white {
     color: hsl(var(--white)) !important;
+}
+
+.z-99 {
+    z-index: 99;
 }
 
 /* ================================= Classes Css End =========================== */
@@ -8485,11 +8493,11 @@ input:focus-visible {
 }
 
 .nav-menu__item.activePage > a {
-    color: hsl(var(--main));
+    color: hsl(var(--main)) !important;
 }
 
 .nav-menu__item.activePage > a::before {
-    color: hsl(var(--main));
+    color: hsl(var(--main)) !important;
 }
 
 .nav-menu__item:hover > a {
@@ -8498,7 +8506,7 @@ input:focus-visible {
 
 @media (min-width: 992px) {
     .nav-menu__item:hover > a {
-        color: hsl(var(--main));
+        color: hsl(var(--main)) !important;
     }
 }
 
@@ -10458,6 +10466,10 @@ input:focus-visible {
     .grid-cols-3.list-view {
         grid-template-columns: 1fr !important;
     }
+}
+
+.grid-cols-3-repeat {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .list-view .vendors-two-item {
