@@ -345,11 +345,26 @@
 
 .header-style-two {
     .header {
-        padding-bottom: 24px;
+        padding-bottom: 12px;
+        padding-top: 12px !important;
     }
     .category__button {
         border-radius: 8px;
         overflow: hidden;
     }
+}
+
+
+.header-sticky-style {
+    .header {
+        &.fixed-header {
+            padding-bottom: 12px;
+            padding-top: 12px !important;
+            .category__button {
+                border-radius: 8px;
+            }
+        }
+    }
+    
 }
 /* ================================= Header Css End =========================== */

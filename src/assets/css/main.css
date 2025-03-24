@@ -4930,6 +4930,10 @@ input:focus-visible {
     max-height: 300px !important;
 }
 
+.max-h-380 {
+    max-height: 380px;
+}
+
 .max-h-326 {
     max-height: 326px !important;
 }
@@ -8815,12 +8819,22 @@ input:focus-visible {
 }
 
 .header-style-two .header {
-    padding-bottom: 24px;
+    padding-bottom: 12px;
+    padding-top: 12px !important;
 }
 
 .header-style-two .category__button {
     border-radius: 8px;
     overflow: hidden;
+}
+
+.header-sticky-style .header.fixed-header {
+    padding-bottom: 12px;
+    padding-top: 12px !important;
+}
+
+.header-sticky-style .header.fixed-header .category__button {
+    border-radius: 8px;
 }
 
 /* ================================= Header Css End =========================== */
